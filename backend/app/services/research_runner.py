@@ -19,6 +19,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.config import get_settings
 from app.db.models import ResearchSession
+from app.db.pg_network import finalize_libpq_url
 from app.db.session import AsyncSessionLocal
 from app.graph.build import compile_research_graph
 from app.schemas.state import ResearchGraphState
@@ -29,21 +30,8 @@ logger = logging.getLogger(__name__)
 
 def _checkpoint_conn_string() -> str:
     """LangGraph's AsyncPostgresSaver expects a libpq URI without asyncpg driver."""
-    url = get_settings().database_url
-    if url.startswith("postgresql+asyncpg://"):
-        sync = url.replace("postgresql+asyncpg://", "postgresql://", 1)
-    else:
-        sync = url
-
-    low = sync.lower()
-    needs_ssl_query = (
-        ("neon.tech" in low or "supabase.co" in low or "supabase.com" in low)
-        and "sslmode=" not in low
-        and "ssl=" not in low
-    )
-    if needs_ssl_query:
-        sync = f"{sync}{'&' if '?' in sync else '?'}sslmode=require"
-    return sync
+    s = get_settings()
+    return finalize_libpq_url(s.database_url, use_supabase_ipv4=s.database_supabase_ipv4)
 
 
 def _initial_state(session_id: UUID, query: str) -> ResearchGraphState:

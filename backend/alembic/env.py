@@ -16,6 +16,7 @@ if str(ROOT) not in sys.path:
 from app.config import get_settings
 from app.db import models  # noqa: F401 — register ORM metadata
 from app.db.base import Base
+from app.db.pg_network import finalize_libpq_url
 
 config = context.config
 if config.config_file_name is not None:
@@ -25,24 +26,9 @@ target_metadata = Base.metadata
 
 
 def get_sync_url() -> str:
-    """
-    Same normalized ``DATABASE_URL`` as the API (quote strip, channel_binding strip,
-    ``postgresql+asyncpg`` → ``postgresql`` for sync Alembic/psycopg2), plus
-    ``sslmode=require`` when missing for Neon/Supabase hosts.
-    """
-    url = get_settings().database_url
-    if url.startswith("postgresql+asyncpg://"):
-        sync = url.replace("postgresql+asyncpg://", "postgresql://", 1)
-    else:
-        sync = url
-    low = sync.lower()
-    if (
-        ("neon.tech" in low or "supabase.co" in low or "supabase.com" in low)
-        and "sslmode=" not in low
-        and "ssl=" not in low
-    ):
-        sync = f"{sync}{'&' if '?' in sync else '?'}sslmode=require"
-    return sync
+    """Normalized sync URL for Alembic (matches LangGraph / libpq helpers)."""
+    s = get_settings()
+    return finalize_libpq_url(s.database_url, use_supabase_ipv4=s.database_supabase_ipv4)
 
 
 def run_migrations_offline() -> None:

@@ -8,7 +8,7 @@ Never commit real secrets; use `.env` locally (gitignored) and your host’s sec
 
 | Variable | Description |
 |----------|-------------|
-| `DATABASE_URL` | PostgreSQL URL for the API. Use `postgresql+asyncpg://…` or plain `postgresql://…` (the app rewrites the latter for asyncpg). Neon and other hosts are supported; Neon URLs enable TLS for asyncpg automatically when the host contains `neon.tech`. |
+| `DATABASE_URL` | PostgreSQL URL for the API. Use `postgresql+asyncpg://…` or plain `postgresql://…` (the app rewrites the latter for asyncpg). **Supabase**: direct host `db.<project>.supabase.co` often resolves to IPv6; on IPv4-only hosts (e.g. Render) the app adds IPv4 by default — see `DATABASE_SUPABASE_IPV4`. |
 
 ## API server
 
@@ -18,6 +18,7 @@ Never commit real secrets; use `.env` locally (gitignored) and your host’s sec
 | `API_PORT` | `8000` | Port when not using platform `PORT` (e.g. local Docker). |
 | `ENVIRONMENT` | `local` | `local` or `production`. In `production`, if `MODEL_STRONG` / `MODEL_FAST` are still the default Ollama ids, they are replaced with `gemini/gemini-2.5-flash`. |
 | `CORS_ORIGINS` | Local Vite + Compose origins | Comma-separated allowed browser origins. Production: include your static frontend origin (e.g. `https://your-app.vercel.app`). |
+| `DATABASE_SUPABASE_IPV4` | `true` | For `db.*.supabase.co`, resolve an IPv4 address (fixes “Network is unreachable” when DNS returns IPv6 only). Set to `false` if you need to disable this. |
 | `PORT` | — | Set by platforms such as Render; entrypoint listens on `PORT` when present. |
 
 ## Database pool

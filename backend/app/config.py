@@ -53,8 +53,7 @@ def _discovered_env_files() -> tuple[str, ...]:
 
 def _strip_asyncpg_incompatible_query(url: str) -> str:
     """
-    Neon connection strings often include ``channel_binding=require``.
-    asyncpg does not implement SCRAM channel binding, so that parameter breaks connects.
+    Remove query params that asyncpg cannot use (e.g. ``channel_binding=require``).
     """
     parsed = urlparse(url)
     if not parsed.query:
@@ -96,6 +95,13 @@ class Settings(BaseSettings):
         description=(
             "Async SQLAlchemy URL, e.g. "
             "postgresql+asyncpg://user:pass@localhost:5432/research_swarm"
+        ),
+    )
+    database_supabase_ipv4: bool = Field(
+        default=True,
+        description=(
+            "For db.*.supabase.co, resolve IPv4 (fixes IPv6-only DNS on IPv4-only hosts "
+            "such as Render). Set DATABASE_SUPABASE_IPV4=false to disable."
         ),
     )
     db_pool_size: int = Field(default=5, ge=1, le=50)
@@ -193,7 +199,7 @@ class Settings(BaseSettings):
     @field_validator("database_url", mode="before")
     @classmethod
     def normalize_async_database_url(cls, v: object) -> object:
-        """Allow Neon / platform `postgresql://` URIs; the API uses asyncpg."""
+        """Allow ``postgresql://`` URIs; the API normalizes to ``postgresql+asyncpg``."""
         if not isinstance(v, str):
             return v
         s = v.strip()
