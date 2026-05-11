@@ -96,10 +96,10 @@ class Settings(BaseSettings):
     database_url: str = Field(
         ...,
         description=(
-            "Async SQLAlchemy URL. Local: postgresql+asyncpg://user:pass@host:5432/dbname. "
+            "Async SQLAlchemy URL (psycopg3 async / libpq). Local: postgresql+psycopg_async://…. "
             "Hosted Supabase (recommended on IPv4-only PaaS, e.g. Render): Session pooler from "
             "the dashboard — postgresql://postgres.<project_ref>:pass@aws-*-<region>.pooler.supabase.com:5432/postgres "
-            "(plain postgresql:// is normalized to +asyncpg). "
+            "(plain postgresql:// is normalized to +psycopg_async). "
             "Direct db.<ref>.supabase.co is IPv6-only in many regions; prefer the pooler URI there."
         ),
     )
@@ -221,15 +221,17 @@ class Settings(BaseSettings):
     @field_validator("database_url", mode="before")
     @classmethod
     def normalize_async_database_url(cls, v: object) -> object:
-        """Allow ``postgresql://`` URIs; the API normalizes to ``postgresql+asyncpg``."""
+        """Allow ``postgresql://`` URIs; normalize to ``postgresql+psycopg_async`` (libpq, matches Alembic)."""
         if not isinstance(v, str):
             return v
         s = v.strip()
         # Render / dashboard paste sometimes wraps the whole URI in quotes.
         if (s.startswith('"') and s.endswith('"')) or (s.startswith("'") and s.endswith("'")):
             s = s[1:-1].strip()
-        if s.startswith("postgresql://") and not s.startswith("postgresql+asyncpg://"):
-            s = f"postgresql+asyncpg://{s[len('postgresql://') :]}"
+        if s.startswith("postgresql+asyncpg://"):
+            s = f"postgresql+psycopg_async://{s[len('postgresql+asyncpg://') :]}"
+        elif s.startswith("postgresql://"):
+            s = f"postgresql+psycopg_async://{s[len('postgresql://') :]}"
         return _strip_asyncpg_incompatible_query(s)
 
     @model_validator(mode="after")

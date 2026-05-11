@@ -5,7 +5,7 @@
 #   export DATABASE_URL='postgresql://user:pass@ep-xxx.neon.tech/neondb?sslmode=require'
 #   ./scripts/run-neon-bootstrap.sh
 #
-# DATABASE_URL may use asyncpg form (postgresql+asyncpg://) — this script strips the driver for psql.
+# DATABASE_URL may use SQLAlchemy async form — this script strips the driver for psql.
 
 set -euo pipefail
 
@@ -18,7 +18,9 @@ if [[ -z "${DATABASE_URL:-}" ]]; then
 fi
 
 RAW="${DATABASE_URL}"
-if [[ "${RAW}" == postgresql+asyncpg://* ]]; then
+if [[ "${RAW}" == postgresql+psycopg_async://* ]]; then
+  RAW="postgresql://${RAW#postgresql+psycopg_async://}"
+elif [[ "${RAW}" == postgresql+asyncpg://* ]]; then
   RAW="postgresql://${RAW#postgresql+asyncpg://}"
 fi
 export PGSSLMODE="${PGSSLMODE:-require}"

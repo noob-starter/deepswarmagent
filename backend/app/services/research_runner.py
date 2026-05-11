@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 
 def _checkpoint_conn_string() -> str:
-    """LangGraph's AsyncPostgresSaver expects a libpq URI without asyncpg driver."""
+    """LangGraph's AsyncPostgresSaver expects a libpq URI without SQLAlchemy's async driver prefix."""
     s = get_settings()
     return finalize_libpq_url(
         s.database_url,

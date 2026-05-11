@@ -8,7 +8,7 @@ Never commit real secrets; use `.env` locally (gitignored) and your host’s sec
 
 | Variable | Description |
 |----------|-------------|
-| `DATABASE_URL` | PostgreSQL URL for the API. Use `postgresql+asyncpg://…` or plain `postgresql://…` (the app rewrites the latter for asyncpg). **Supabase (recommended on IPv4-only hosts, e.g. Render):** use the **Session pooler** URI from the dashboard (`postgres.<project_ref>@aws-*-<region>.pooler.supabase.com:5432`). Direct `db.<ref>.supabase.co` is often IPv6-only publicly — only then set `DATABASE_SUPABASE_IPV4=true` or switch to the pooler URL. |
+| `DATABASE_URL` | PostgreSQL URL for the API. Use `postgresql+psycopg_async://…` or plain `postgresql://…` (normalized to `+psycopg_async`, libpq — aligns with Alembic). **Supabase (recommended on IPv4-only hosts, e.g. Render):** use the **Session pooler** URI from the dashboard (`postgres.<project_ref>@aws-*-<region>.pooler.supabase.com:5432`). Direct `db.<ref>.supabase.co` is often IPv6-only publicly — only then set `DATABASE_SUPABASE_IPV4=true` or switch to the pooler URL. |
 
 ## API server
 

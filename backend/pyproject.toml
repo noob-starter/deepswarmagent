@@ -15,7 +15,6 @@ dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.32.0",
     "sqlalchemy[asyncio]>=2.0.36",
-    "asyncpg>=0.30.0",
     "psycopg2-binary>=2.9.10",
     # psycopg v3 (LangGraph Postgres checkpoint); [binary] bundles libpq for slim Docker images
     "psycopg[binary]>=3.2.0",

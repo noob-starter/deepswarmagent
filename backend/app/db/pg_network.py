@@ -135,10 +135,11 @@ def resolve_supabase_direct_ipv4(hostname: str, *, explicit: str | None = None) 
 
 def sync_postgresql_url_with_ssl(canonical_database_url: str) -> str:
     """``postgresql://`` + ``sslmode=require`` for Supabase when missing."""
-    if canonical_database_url.startswith("postgresql+asyncpg://"):
-        sync = canonical_database_url.replace("postgresql+asyncpg://", "postgresql://", 1)
-    else:
-        sync = canonical_database_url
+    sync = canonical_database_url
+    for prefix in ("postgresql+psycopg_async://", "postgresql+asyncpg://"):
+        if sync.startswith(prefix):
+            sync = sync.replace(prefix, "postgresql://", 1)
+            break
     low = sync.lower()
     if (
         ("supabase.co" in low or "supabase.com" in low)
@@ -218,57 +219,18 @@ def rewrite_supabase_direct_to_session_pooler_sync(
 def rewrite_supabase_direct_to_session_pooler_any(
     url: str, *, region_hint: str | None = None
 ) -> str | None:
-    """Same as pooler rewrite; preserves ``postgresql+asyncpg`` scheme if present."""
+    """Same as pooler rewrite; preserves async SQLAlchemy driver prefix if present."""
     p = urlparse(url)
-    asyncpg = p.scheme.startswith("postgresql+asyncpg")
+    scheme = p.scheme
     sync = sync_postgresql_url_with_ssl(url)
     out = rewrite_supabase_direct_to_session_pooler_sync(sync, region_hint=region_hint)
     if not out:
         return None
-    if asyncpg:
+    if scheme.startswith("postgresql+psycopg_async"):
+        return out.replace("postgresql://", "postgresql+psycopg_async://", 1)
+    if scheme.startswith("postgresql+asyncpg"):
         return out.replace("postgresql://", "postgresql+asyncpg://", 1)
     return out
-
-
-def is_supabase_pooler_hostname(hostname: str | None) -> bool:
-    if not hostname:
-        return False
-    return hostname.lower().endswith(".pooler.supabase.com")
-
-
-def asyncpg_pooler_url_prefer_ipv4_literal(url: str) -> tuple[str, bool]:
-    """
-    Replace *.pooler.supabase.com with its IPv4 in the URL netloc.
-
-    libpq (Alembic/psycopg2) and asyncpg sometimes differ in address family
-    ordering; on IPv4-only hosts asyncpg can pick an unreachable IPv6 first.
-    Connecting by IPv4 requires relaxing TLS hostname verification (cert is
-    for the pooler hostname).
-    """
-    p = urlparse(url)
-    host = p.hostname
-    if not is_supabase_pooler_hostname(host):
-        return url, False
-    ipv4 = first_ipv4_socket(host or "")
-    if not ipv4:
-        return url, False
-
-    user = quote(p.username or "", safe="")
-    password = p.password
-    if password is not None:
-        auth = f"{user}:{quote(password, safe='')}"
-    elif p.username:
-        auth = user
-    else:
-        auth = ""
-    port = f":{p.port}" if p.port else ""
-    netloc = f"{auth}@{ipv4}{port}" if auth else f"{ipv4}{port}"
-    new_url = urlunparse(p._replace(netloc=netloc))
-    logger.info(
-        "asyncpg: using IPv4 literal for pooler host %s (TLS SNI hostname check relaxed).",
-        host,
-    )
-    return new_url, True
 
 
 def asyncpg_url_replace_host_with_ipv4(
@@ -311,11 +273,11 @@ def finalize_libpq_url(
         sync = libpq_append_ipv4_hostaddr(sync, explicit_ipv4=explicit_hostaddr)
         needs_pooler = "hostaddr=" not in (urlparse(sync).query or "").lower()
         if needs_pooler and is_supabase_direct_hostname(urlparse(sync).hostname):
-            pool = rewrite_supabase_direct_to_session_pooler_sync(
+            pooler_sync = rewrite_supabase_direct_to_session_pooler_sync(
                 sync, region_hint=supabase_pooler_region
             )
-            if pool:
-                return pool
+            if pooler_sync:
+                return pooler_sync
         if needs_pooler and sync == before:
             logger.warning(
                 "No IPv4 for %s and pooler rewrite failed; set SUPABASE_POOLER_REGION, "

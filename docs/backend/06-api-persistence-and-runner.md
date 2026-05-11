@@ -36,7 +36,7 @@ Pydantic models in `app/schemas/api.py`:
 AsyncPostgresSaver.from_conn_string(postgresql://...)
 ```
 
-Connection string is derived from `DATABASE_URL` by stripping `+asyncpg` for LangGraph’s sync driver.
+Connection string is derived from `DATABASE_URL` by stripping `+psycopg_async` (or legacy `+asyncpg`) for LangGraph’s sync driver.
 
 `checkpointer.setup()` ensures checkpoint tables exist.
 

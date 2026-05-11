@@ -142,7 +142,7 @@ pip install .
 Export database URL (example for Compose `db` service on localhost):
 
 ```bash
-export DATABASE_URL="postgresql+asyncpg://research:research@127.0.0.1:5432/research_swarm"
+export DATABASE_URL="postgresql+psycopg_async://research:research@127.0.0.1:5432/research_swarm"
 ```
 
 Run Alembic migrations:
