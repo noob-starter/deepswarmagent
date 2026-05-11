@@ -12,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
 
 from app.api.routes import router
-from app.config import get_settings
+from app.config import get_settings, parse_cors_origins_list
 from app.db.session import AsyncSessionLocal
 from app.services.observability import (
     configure_litellm_runtime,
@@ -37,7 +37,7 @@ def create_app() -> FastAPI:
     settings = get_settings()
     app = FastAPI(title=settings.api_title, version="0.2.0", lifespan=lifespan)
 
-    origins = [o.strip() for o in settings.cors_origins.split(",") if o.strip()]
+    origins = parse_cors_origins_list(settings.cors_origins)
     if not origins:
         origins = ["*"]
 

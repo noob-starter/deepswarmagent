@@ -19,6 +19,25 @@ _BACKEND_ROOT = Path(__file__).resolve().parent.parent
 _REPO_ROOT = _BACKEND_ROOT.parent
 
 
+def parse_cors_origins_list(raw: str) -> list[str]:
+    """
+    Split ``CORS_ORIGINS`` and normalize entries for CORSMiddleware matching.
+
+    Browsers send ``Origin`` without a trailing slash; pasted URLs often include one.
+    """
+    items: list[str] = []
+    for part in raw.split(","):
+        o = part.strip()
+        if not o:
+            continue
+        if (o.startswith('"') and o.endswith('"')) or (o.startswith("'") and o.endswith("'")):
+            o = o[1:-1].strip()
+        o = o.rstrip("/")
+        if o:
+            items.append(o)
+    return items
+
+
 def _discovered_env_files() -> tuple[str, ...]:
     candidates = (
         _REPO_ROOT / ".env",
