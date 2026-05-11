@@ -22,6 +22,8 @@ from app.db.pg_network import (
     finalize_libpq_url,
     is_supabase_direct_hostname,
     resolve_supabase_direct_ipv4,
+    rewrite_supabase_direct_to_session_pooler_sync,
+    sync_postgresql_url_with_ssl,
 )
 
 config = context.config
@@ -40,6 +42,7 @@ def get_sync_url() -> str:
         use_supabase_ipv4=s.database_supabase_ipv4,
         explicit_hostaddr=s.database_hostaddr,
         embed_hostaddr_in_query=True,
+        supabase_pooler_region=s.supabase_pooler_region,
     )
 
 
@@ -61,12 +64,7 @@ def run_migrations_online() -> None:
     """Run migrations inside a sync connection (Alembic default)."""
     s = get_settings()
     # psycopg2 via SQLAlchemy often ignores hostaddr if it is only in the URL query string.
-    url = finalize_libpq_url(
-        s.database_url,
-        use_supabase_ipv4=False,
-        explicit_hostaddr=None,
-        embed_hostaddr_in_query=False,
-    )
+    url = sync_postgresql_url_with_ssl(s.database_url)
     connect_args: dict[str, str] = {}
     if s.database_supabase_ipv4:
         parsed = urlparse(url)
@@ -77,11 +75,21 @@ def run_migrations_online() -> None:
                 connect_args["hostaddr"] = ip
                 logger.info("Alembic connect using hostaddr=%s (hostname=%s)", ip, host)
             else:
-                logger.warning(
-                    "No IPv4 resolved for %s — migrations will likely fail on IPv4-only networks. "
-                    "Set DATABASE_HOSTADDR or use Supabase Session pooler.",
-                    host,
+                pool = rewrite_supabase_direct_to_session_pooler_sync(
+                    url, region_hint=s.supabase_pooler_region
                 )
+                if pool:
+                    url = pool
+                    logger.info(
+                        "Alembic using Supabase session pooler (direct %s has no public IPv4).",
+                        host,
+                    )
+                else:
+                    logger.warning(
+                        "No IPv4 for %s and pooler rewrite failed (set SUPABASE_POOLER_REGION "
+                        "or paste Session pooler DATABASE_URL from Supabase).",
+                        host,
+                    )
 
     connectable = create_engine(
         url,

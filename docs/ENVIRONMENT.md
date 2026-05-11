@@ -8,7 +8,7 @@ Never commit real secrets; use `.env` locally (gitignored) and your host’s sec
 
 | Variable | Description |
 |----------|-------------|
-| `DATABASE_URL` | PostgreSQL URL for the API. Use `postgresql+asyncpg://…` or plain `postgresql://…` (the app rewrites the latter for asyncpg). **Supabase**: direct host `db.<project>.supabase.co` often resolves to IPv6; on IPv4-only hosts (e.g. Render) the app adds IPv4 by default — see `DATABASE_SUPABASE_IPV4`. |
+| `DATABASE_URL` | PostgreSQL URL for the API. Use `postgresql+asyncpg://…` or plain `postgresql://…` (the app rewrites the latter for asyncpg). **Supabase (recommended on IPv4-only hosts, e.g. Render):** use the **Session pooler** URI from the dashboard (`postgres.<project_ref>@aws-*-<region>.pooler.supabase.com:5432`). Direct `db.<ref>.supabase.co` is often IPv6-only publicly — only then set `DATABASE_SUPABASE_IPV4=true` or switch to the pooler URL. |
 
 ## API server
 
@@ -18,8 +18,9 @@ Never commit real secrets; use `.env` locally (gitignored) and your host’s sec
 | `API_PORT` | `8000` | Port when not using platform `PORT` (e.g. local Docker). |
 | `ENVIRONMENT` | `local` | `local` or `production`. In `production`, if `MODEL_STRONG` / `MODEL_FAST` are still the default Ollama ids, they are replaced with `gemini/gemini-2.5-flash`. |
 | `CORS_ORIGINS` | Local Vite + Compose origins | Comma-separated allowed browser origins. Production: include your static frontend origin (e.g. `https://your-app.vercel.app`). |
-| `DATABASE_SUPABASE_IPV4` | `true` | For `db.*.supabase.co`, resolve an IPv4 for libpq/asyncpg. Uses the container’s A record first, then public DNS-over-HTTPS (Cloudflare / Google) if only IPv6 is returned. Set `false` to disable. |
-| `DATABASE_HOSTADDR` | — | Optional IPv4 for libpq `hostaddr` when auto-resolution fails (e.g. DoH blocked). Example: `203.0.113.10`. |
+| `DATABASE_SUPABASE_IPV4` | `false` | If `true` and `DATABASE_URL` uses Supabase **direct** `db.*.supabase.co`, resolve IPv4 or fall back to Session pooler (for IPv4-only PaaS). Leave `false` when `DATABASE_URL` is already a `*.pooler.supabase.com` URI (typical production). |
+| `DATABASE_HOSTADDR` | — | Optional IPv4 for libpq `hostaddr` when using direct `db.*` with `DATABASE_SUPABASE_IPV4=true` and auto-resolution fails. |
+| `SUPABASE_POOLER_REGION` | — | e.g. `ap-northeast-1` — only helps automatic pooler rewrite when `DATABASE_SUPABASE_IPV4=true` and direct host has no public IPv4. Omit with a pooler `DATABASE_URL`. |
 | `PORT` | — | Set by platforms such as Render; entrypoint listens on `PORT` when present. |
 
 ## Database pool

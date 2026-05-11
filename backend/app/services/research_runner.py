@@ -35,6 +35,7 @@ def _checkpoint_conn_string() -> str:
         s.database_url,
         use_supabase_ipv4=s.database_supabase_ipv4,
         explicit_hostaddr=s.database_hostaddr,
+        supabase_pooler_region=s.supabase_pooler_region,
     )
 
 

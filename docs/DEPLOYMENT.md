@@ -3,7 +3,7 @@
 This monorepo is split into a **Python API** (Docker) and a **static React UI** (Vite build). The reference production layout is:
 
 - **API**: container from `backend/Dockerfile` (repo root context), e.g. [Render](https://render.com) **Web Service** — see `render.yaml`.
-- **Database**: managed PostgreSQL (e.g. [Supabase](https://supabase.com)); set `DATABASE_URL` on the API. For Supabase **direct** `db.*.supabase.co` on [Render](https://render.com), keep `DATABASE_SUPABASE_IPV4=true` (default) so the API uses IPv4 — see [ENVIRONMENT.md](ENVIRONMENT.md).
+- **Database**: managed PostgreSQL (e.g. [Supabase](https://supabase.com)); set `DATABASE_URL` on the API. Prefer Supabase’s **Session pooler** connection string on IPv4-only hosts (e.g. Render). If you use **direct** `db.*.supabase.co` instead, set **`DATABASE_SUPABASE_IPV4=true`** — see [ENVIRONMENT.md](ENVIRONMENT.md).
 - **UI**: static hosting (e.g. [Vercel](https://vercel.com)) from `frontend/` with `npm run build`.
 
 Compose (`docker-compose.yml`) is intended for **local** full stack (Postgres + Ollama + API + nginx). Do not assume Ollama exists in cloud production unless you operate it yourself.
@@ -18,7 +18,7 @@ Compose (`docker-compose.yml`) is intended for **local** full stack (Postgres + 
 
 `render.yaml` declares a Docker web service. In the Render dashboard, set at least:
 
-- `DATABASE_URL` — from Supabase (or your provider). Plain `postgresql://` is fine.
+- `DATABASE_URL` — Supabase **Session pooler** URI recommended (or any Postgres URL). Plain `postgresql://` is fine.
 - `GOOGLE_API_KEY` — if you rely on Gemini in production (see `ENVIRONMENT=production` and model defaults in `backend/app/config.py`).
 - `CORS_ORIGINS` — comma-separated list including your **frontend** origin (e.g. `https://your-app.vercel.app`).
 

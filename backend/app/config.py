@@ -93,22 +93,34 @@ class Settings(BaseSettings):
     database_url: str = Field(
         ...,
         description=(
-            "Async SQLAlchemy URL, e.g. "
-            "postgresql+asyncpg://user:pass@localhost:5432/research_swarm"
+            "Async SQLAlchemy URL. Local: postgresql+asyncpg://user:pass@host:5432/dbname. "
+            "Hosted Supabase (recommended on IPv4-only PaaS, e.g. Render): Session pooler from "
+            "the dashboard — postgresql://postgres.<project_ref>:pass@aws-*-<region>.pooler.supabase.com:5432/postgres "
+            "(plain postgresql:// is normalized to +asyncpg). "
+            "Direct db.<ref>.supabase.co is IPv6-only in many regions; prefer the pooler URI there."
         ),
     )
     database_supabase_ipv4: bool = Field(
-        default=True,
+        default=False,
         description=(
-            "For db.*.supabase.co, resolve IPv4 (fixes IPv6-only DNS on IPv4-only hosts "
-            "such as Render). Set DATABASE_SUPABASE_IPV4=false to disable."
+            "If true and DATABASE_URL uses Supabase **direct** host db.*.supabase.co, resolve IPv4 "
+            "or rewrite to Session pooler (for IPv4-only hosts such as Render). "
+            "Leave false when DATABASE_URL already points at *.pooler.supabase.com (typical production)."
         ),
     )
     database_hostaddr: str | None = Field(
         default=None,
         description=(
-            "Optional IPv4 for libpq ``hostaddr`` when using db.*.supabase.co on IPv4-only "
-            "hosts. Set DATABASE_HOSTADDR if auto-resolution fails."
+            "Optional IPv4 for libpq hostaddr when using direct db.*.supabase.co with "
+            "DATABASE_SUPABASE_IPV4=true. Not used for pooler DATABASE_URL."
+        ),
+    )
+    supabase_pooler_region: str | None = Field(
+        default=None,
+        description=(
+            "AWS region (e.g. ap-northeast-1) only for automatic pooler rewrite when "
+            "DATABASE_SUPABASE_IPV4=true and direct db host has no public IPv4. "
+            "Omit when DATABASE_URL is already a pooler URI."
         ),
     )
     db_pool_size: int = Field(default=5, ge=1, le=50)

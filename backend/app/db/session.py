@@ -14,7 +14,11 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 
 from app.config import get_settings
 from app.db.base import Base
-from app.db.pg_network import asyncpg_url_replace_host_with_ipv4
+from app.db.pg_network import (
+    asyncpg_url_replace_host_with_ipv4,
+    is_supabase_direct_hostname,
+    rewrite_supabase_direct_to_session_pooler_any,
+)
 
 _settings = get_settings()
 
@@ -74,6 +78,16 @@ if _settings.database_supabase_ipv4:
         _settings.database_url,
         explicit_ipv4=_settings.database_hostaddr,
     )
+    if _effective_url == _settings.database_url and is_supabase_direct_hostname(
+        urlparse(_settings.database_url).hostname
+    ):
+        alt = rewrite_supabase_direct_to_session_pooler_any(
+            _settings.database_url,
+            region_hint=_settings.supabase_pooler_region,
+        )
+        if alt:
+            _effective_url = alt
+            _ssl_relaxed = False
 
 engine = create_async_engine(
     _effective_url,
@@ -81,7 +95,7 @@ engine = create_async_engine(
     max_overflow=_settings.db_max_overflow,
     pool_pre_ping=True,
     connect_args=_asyncpg_connect_args(
-        _settings.database_url,
+        _effective_url,
         ssl_relaxed_hostname=_ssl_relaxed,
     ),
 )
