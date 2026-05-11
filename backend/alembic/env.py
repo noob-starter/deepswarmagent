@@ -75,11 +75,11 @@ def run_migrations_online() -> None:
                 connect_args["hostaddr"] = ip
                 logger.info("Alembic connect using hostaddr=%s (hostname=%s)", ip, host)
             else:
-                pool = rewrite_supabase_direct_to_session_pooler_sync(
+                pooler_url = rewrite_supabase_direct_to_session_pooler_sync(
                     url, region_hint=s.supabase_pooler_region
                 )
-                if pool:
-                    url = pool
+                if pooler_url:
+                    url = pooler_url
                     logger.info(
                         "Alembic using Supabase session pooler (direct %s has no public IPv4).",
                         host,
