@@ -1,0 +1,25 @@
+# Render blueprint: Web service from repo-root Dockerfile (`backend/Dockerfile`, context `.`).
+# Set secrets in the Render dashboard: DATABASE_URL, GOOGLE_API_KEY, CORS_ORIGINS, etc.
+
+services:
+  - type: web
+    name: deep-research-swarm-api
+    runtime: docker
+    dockerfilePath: backend/Dockerfile
+    dockerContext: .
+    # Uses app /health (includes DB ping); Render expects a 2xx within ~5s.
+    healthCheckPath: /health
+    plan: starter
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: API_HOST
+        value: 0.0.0.0
+      - key: PYTHONPATH
+        value: /app
+      - key: DATABASE_URL
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false

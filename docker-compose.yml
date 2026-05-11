@@ -1,0 +1,79 @@
+# Local full stack: PostgreSQL + Ollama + API + React UI (nginx).
+# UI: http://localhost:3000  (proxies /api → api service)
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: research
+      POSTGRES_PASSWORD: research
+      POSTGRES_DB: research_swarm
+    # Host 5433 avoids conflict when local Postgres (or another service) uses 5432.
+    # API uses service name db:5432 inside the compose network — no DATABASE_URL change.
+    ports:
+      - "${POSTGRES_HOST_PORT:-5433}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U research -d research_swarm"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Local LLM runtime for LiteLLM (ollama/* models). Pull models after first up — see README.
+  ollama:
+    image: ollama/ollama:latest
+    environment:
+      # Listen on all interfaces so the api container can reach this service.
+      OLLAMA_HOST: 0.0.0.0:11434
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "${OLLAMA_HOST_PORT:-11434}:11434"
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list >/dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    # --- Optional (Linux + NVIDIA): faster inference ---
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://research:research@db:5432/research_swarm
+      # Override host.docker.internal from .env — inside Compose the api reaches Ollama by service name.
+      OLLAMA_API_BASE: http://ollama:11434
+    depends_on:
+      db:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+    ports:
+      - "${API_PORT:-8000}:8000"
+
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    depends_on:
+      - api
+    ports:
+      - "${WEB_PORT:-3000}:80"
+
+volumes:
+  pgdata:
+  ollama_data:

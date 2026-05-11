@@ -1,0 +1,82 @@
+# --- Environment & secrets (use CI / platform env or a secrets manager in prod) ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+*.key
+!*.key.example
+
+# --- Python ---
+.venv/
+.venv-ci/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.mypy_cache/
+.pytest_cache/
+.pytype/
+.ruff_cache/
+.hypothesis/
+coverage.xml
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+.tox/
+.nox/
+
+# --- Node / frontend ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.pnpm-store/
+.turbo/
+*.tsbuildinfo
+.npm/
+.eslintcache
+
+# --- Build & packaging (rebuild in CI / images) ---
+dist/
+build/
+*.egg
+
+# --- Logs & runtime noise ---
+*.log
+logs/
+tmp/
+temp/
+.cache/
+
+# --- OS & editors ---
+.DS_Store
+Thumbs.db
+.idea/
+# Cursor: commit shared rule packs under .cursor/rules/; ignore local-only config
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+*.swp
+*.swo
+*~
+
+# --- Docker (local overrides; never override prod compose in git) ---
+docker-compose.override.yml
+
+# --- Local databases / dumps (never ship to prod from git) ---
+*.sqlite
+*.sqlite3
+*.db-journal
+pgdata/
+*.sql.gz
+*.dump

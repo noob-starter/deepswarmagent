@@ -1,0 +1,12 @@
+---
+description: Langfuse tracing and LLM observability for this repo
+alwaysApply: true
+---
+
+# Langfuse tracing
+
+For **observability, tracing, or Langfuse-related changes** (including LiteLLM callbacks, spans, evaluations, or debugging missing traces):
+
+**Install the Langfuse AI skill from [github.com/langfuse/skills](https://github.com/langfuse/skills) and use it to add tracing to this application with Langfuse following best practices.**
+
+Backend wiring lives under `backend/app/services/observability.py`, `configure_litellm_runtime()` at API startup (`backend/app/main.py`), and `LANGFUSE_*` settings in `backend/app/config.py`. After changing tracing, restart the API and confirm ingestion at the Langfuse UI for your region (host must match the project, e.g. EU/JP/US cloud URLs).

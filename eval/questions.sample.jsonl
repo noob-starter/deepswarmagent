@@ -1,0 +1,3 @@
+{"id": "q1", "question": "What is LangGraph and when should I prefer it over Celery for multi-step LLM workflows?"}
+{"id": "q2", "question": "Summarize the trade-offs between DuckDuckGo scraping, Serper, and Tavily for agentic web search."}
+{"id": "q3", "question": "How do Postgres checkpointers in LangGraph relate to idempotent human-in-the-loop resumes?"}

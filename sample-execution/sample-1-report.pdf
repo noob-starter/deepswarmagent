@@ -1,0 +1,8759 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 4445
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 16 Tf
+18.3999999999999986 TL
+0 g
+39.6850393700787407 796.5356692913385359 Td
+(Deep Research Swarm — session report) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.314 g
+39.6850393700787407 773.8585039370078675 Td
+(Generated: 2026-05-11T06:14:18Z) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 756.8506299212598378 Td
+(Session) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+39.6850393700787407 742.6774015748030706 Td
+(Session ID: 8b800d4b-a254-4da5-a356-c880dcb36d74) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+39.6850393700787407 731.3388188976377933 Td
+(Status: completed) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+39.6850393700787407 720.0002362204724022 Td
+(Created: 2026-05-11T05:51:33.247851Z) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+39.6850393700787407 708.6616535433070112 Td
+(Wall-clock duration: 19:29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+39.6850393700787407 697.3230708661417339 Td
+(Total cost \(USD\): 0.000000) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+39.6850393700787407 685.9844881889763428 Td
+(Agent invocations \(counter\): 26) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 663.3073228346456744 Td
+(Research question) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+39.6850393700787407 649.1340944881889072 Td
+(What are the main trade-offs between synchronized blocks vs explicit locks in java?) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 620.7876377952754865 Td
+(Research answer & report) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 603.7797637795274568 Td
+(Based on the provided text, here are some key takeaways and insights:) Tj
+T* () Tj
+T* (Synchronization vs Locks) Tj
+T* () Tj
+T* ( Synchronized blocks and explicit locks \(like ReentrantLock\) are used for synchronization in Java.) Tj
+T* ( Both methods can be used to achieve thread safety, but they have different trade-offs.) Tj
+T* () Tj
+T* (Trade-Offs) Tj
+T* () Tj
+T* ( Synchronized Blocks: ) Tj
+T* (   Pros: Easy to use, no need to manually manage locks.) Tj
+T* (   Cons: Can lead to deadlocks if not used carefully, and other threads can mutate the object while in the synchronized block.) Tj
+T* ( Explicit Locks \(ReentrantLock\):) Tj
+T* (   Pros: More flexible, allows for more fine-grained control over locking and unlocking.) Tj
+T* (   Cons: Requires manual management of locks, which can be error-prone.) Tj
+T* () Tj
+T* (Best Practices) Tj
+T* () Tj
+T* ( Use synchronized blocks when you need to protect a small scope of code that doesn't require fine-grained control over locking.) Tj
+T* ( Use explicit locks \(ReentrantLock\) when you need more control over locking and unlocking, or when you're working with complex synchronization) Tj
+T* (scenarios.) Tj
+T* () Tj
+T* (Deadlocks) Tj
+T* () Tj
+T* ( Deadlocks can occur when two or more threads are waiting for each other to release a resource.) Tj
+T* ( Synchronized blocks can lead to deadlocks if not used carefully.) Tj
+T* () Tj
+T* (Atomic Variables) Tj
+T* () Tj
+T* ( Atomic variables \(like AtomicInteger\) provide thread-safe updates without the need for explicit locking.) Tj
+T* ( They are useful when you need to update shared data in a thread-safe manner, but don't require fine-grained control over locking.) Tj
+T* () Tj
+T* (Conclusion) Tj
+T* () Tj
+T* (In summary, both synchronized blocks and explicit locks can be used for synchronization in Java. Synchronized blocks are easy to use but may) Tj
+T* (lead to deadlocks if not used carefully. Explicit locks provide more flexibility but require manual management of locks. Atomic variables offer a) Tj
+T* (thread-safe way to update shared data without the need for explicit locking.) Tj
+T* () Tj
+T* (Trust Level) Tj
+T* () Tj
+T* (The provided text has a moderate trust level \(62/100\) due to its reliance on research notes and academic sources, which may have varying levels) Tj
+T* (of credibility. However, the insights and takeaways can still be useful as factual material, without quoting or labeling the specific source blocks.) Tj
+T* () Tj
+T* (> Citation review for claim “Research note tied to retrieved source Reading 22: Locks and Synchronization - MIT) Tj
+T* (\(https://web.mit.edu/6.031/www/sp20/classes/22-locks/\) for «What are the main trade-offs between synchronized blocks vs explicit locks in java?»:) Tj
+T* (Even wh…” — similarity min=0.65 \(threshold 0.7\). Flags: LOW_CITATION_ALIGNMENT) Tj
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 14068
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 796.5356692913385359 Td
+(Search wave questions) Tj
+ET
+BT
+/F1 7.5 Tf
+8.625 TL
+0.294 g
+39.6850393700787407 788.0317322834645211 Td
+(Same wording as expanding “Search wave” on the graph \(sub-questions from SSE tool_call events; export loads full history from the API\).) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 768.1892125984251152 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F2 7.5 Tf
+8.625 TL
+1. g
+43.9370078740157552 757.5622440944881646 Td
+(Question) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+334.4881889763780123 768.1892125984251152 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F2 7.5 Tf
+8.625 TL
+1. g
+338.7401574803150197 757.5622440944881646 Td
+(Search rails / hits) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 751.0602755905511003 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 740.4333070866141497 Td
+(synchronized block disadvantages) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+334.4881889763780123 751.0602755905511003 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 740.4333070866141497 Td
+(search_academic · 5 hits) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 733.9313385826770855 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 723.3043700787401349 Td
+(thread safety vs performance) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+334.4881889763780123 733.9313385826770855 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 723.3043700787401349 Td
+(search_academic · 5 hits) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 716.8024015748031843 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 706.17543307086612 Td
+(performance comparison) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+334.4881889763780123 716.8024015748031843 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 706.17543307086612 Td
+(search_web · 10 hits) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 699.6734645669291695 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 689.0464960629921052 Td
+(synchronized block vs explicit lock in multithreaded environment) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+334.4881889763780123 699.6734645669291695 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 689.0464960629921052 Td
+(search_code · 8 hits) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 682.5445275590551546 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 671.9175590551180903 Td
+(explicit lock advantages) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+334.4881889763780123 682.5445275590551546 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 671.9175590551180903 Td
+(search_code · 8 hits) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 665.4155905511811397 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 654.7886220472440755 Td
+(explicit lock disadvantages) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+334.4881889763780123 665.4155905511811397 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 654.7886220472440755 Td
+(search_code · 6 hits) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 648.2866535433071249 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 637.6596850393700606 Td
+(synchronized block advantages) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+334.4881889763780123 648.2866535433071249 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 637.6596850393700606 Td
+(search_web · 9 hits) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 631.15771653543311 294.8031496062992574 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 620.5307480314960458 Td
+(What are some common pitfalls or edge cases when using synchronized blocks versus) Tj
+T* (explicit locks?) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+334.4881889763780123 631.15771653543311 172.9133858267716732 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 620.5307480314960458 Td
+(search_web · 9 hits) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 605.4037795275590952 294.8031496062992574 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 594.7768110236220309 Td
+(Are there any alternative synchronization mechanisms that can be used in place of) Tj
+T* (synchronized blocks or explicit locks?) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+334.4881889763780123 605.4037795275590952 172.9133858267716732 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 594.7768110236220309 Td
+(search_web · 12 hits) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 579.6498425196849666 294.8031496062992574 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 569.0228740157481298 Td
+(Please provide more information on the advantages and disadvantages of) Tj
+T* (synchronized blocks vs explicit locks in Java.) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+334.4881889763780123 579.6498425196849666 172.9133858267716732 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 569.0228740157481298 Td
+(search_web · 12 hits) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 553.8959055118110655 294.8031496062992574 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 543.2689370078740012 Td
+(How do the performance implications of using synchronized blocks versus explicit) Tj
+T* (locks impact multithreaded applications?) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+334.4881889763780123 553.8959055118110655 172.9133858267716732 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 543.2689370078740012 Td
+(search_web · 12 hits) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 528.1419685039370506 294.8031496062992574 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 517.5150000000001 Td
+(Can you clarify how the trade-offs between synchronized blocks and explicit locks) Tj
+T* (apply to specific use cases?) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+334.4881889763780123 528.1419685039370506 172.9133858267716732 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 517.5150000000001 Td
+(search_web · 12 hits) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 502.3880314960630358 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 491.7610629921260852 Td
+(Be aware of mutual exclusion issues when using synchronized blocks.) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+334.4881889763780123 502.3880314960630358 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 491.7610629921260852 Td
+(search_web · 10 hits) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 485.2590944881890209 294.8031496062992574 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 474.6321259842520703 Td
+(Use AtomicReference or AtomicLong for thread-safe updates and comparisons.) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+334.4881889763780123 485.2590944881890209 172.9133858267716732 -17.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 474.6321259842520703 Td
+(search_web · 12 hits) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 468.1301574803150061 294.8031496062992574 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 457.5031889763780555 Td
+(Consider alternative synchronization mechanisms, such as ReentrantLock or) Tj
+T* (java.util.concurrent.locks.) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+334.4881889763780123 468.1301574803150061 172.9133858267716732 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 457.5031889763780555 Td
+(search_web · 12 hits) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 442.3762204724409912 294.8031496062992574 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 431.7492519685039838 Td
+(Consider using ReentrantLock for more fine-grained control over locking and) Tj
+T* (unlocking.) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+334.4881889763780123 442.3762204724409912 172.9133858267716732 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 431.7492519685039838 Td
+(search_web · 11 hits) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 416.6222834645669195 294.8031496062992574 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 405.9953149606299689 Td
+(Review the trade-offs between performance and complexity when choosing between) Tj
+T* (synchronized blocks and explicit locks.) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+334.4881889763780123 416.6222834645669195 172.9133858267716732 -25.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+338.7401574803150197 405.9953149606299689 Td
+(search_web · 12 hits) Tj
+ET
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 368.1911811023621794 Td
+(Intermediate statement breakdowns) Tj
+ET
+BT
+/F1 7.5 Tf
+8.625 TL
+0.294 g
+39.6850393700787407 359.6872440944881646 Td
+(Planner sub-questions matched to search-wave summaries when available; numbered rows are critic follow-ups.) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 339.8447244094487587 196.0457700787401052 -17.1289370078740149 re
+f
+BT
+/F2 7.5 Tf
+8.625 TL
+1. g
+43.9370078740157552 329.2177559055118081 Td
+(Question) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+235.7308094488188601 339.8447244094487587 299.2277543307085921 -17.1289370078740149 re
+f
+BT
+/F2 7.5 Tf
+8.625 TL
+1. g
+239.9827779527558675 329.2177559055118081 Td
+(Summarized response) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 322.7157874015747439 196.0457700787401052 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 312.0888188976377933 Td
+(synchronized block advantages) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 322.7157874015747439 299.2277543307085921 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 312.0888188976377933 Td
+(Here is a 200-500 token summary answering the sub-question "synchronized block) Tj
+T* (advantages": Synchronized blocks offer several advantages over synchronized) Tj
+T* (methods, including: They do not require explicit synchronization of entire code blocks,) Tj
+T* (making them more efficient. They provide mutual exclusion for shared resources in) Tj
+T* (multithreaded programs. They can be used to ensure thread safety by locking specific) Tj
+T* (objects. In contrast, synchronized methods are often used as a last resort or when direct) Tj
+T* (synchronization is necessary. However, they may not always be the most efficient) Tj
+T* (solution due to their overhead and potential performance issues. A Java Synchronized) Tj
+T* (Block is typically used instead of a synchronized method when: Direct synchronization is) Tj
+T* (required. The code block needs to be executed in a specific order.…) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 227.9618503937007858 196.0457700787401052 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 217.3348818897637784 Td
+(synchronized block disadvantages) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+235.7308094488188601 227.9618503937007858 299.2277543307085921 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 217.3348818897637784 Td
+(Here is a 200-500 token summary answering only the sub-question "synchronized block) Tj
+T* (disadvantages": The synchronized block in particle physics has several disadvantages.) Tj
+T* (Firstly, it relies on analyticity constraints used in Landshoff-Donnachie fits, which may) Tj
+T* (not be sufficient to accurately describe the energy behavior of hadron-hadron cross) Tj
+T* (sections. The implications from these constraints are discussed in detail. Secondly, the) Tj
+T* (gravitational torque of bars in galaxies is determined by transforming light distributions) Tj
+T* (into potentials and deriving maximum ratios of tangential forces relative to radial forces.) Tj
+T* (However, this method has limitations, as it assumes a specific form for the potential and) Tj
+T* (may not accurately capture the complex dynamics of galaxy evolution. Thirdly, new) Tj
+T* (analyticity constraints on high-energy hadron-hadron cross sections have been) Tj
+T* (proposed,…) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 124.5829133858267994 196.0457700787401052 -77.5039370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 113.9559448818897636 Td
+(explicit lock advantages) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 124.5829133858267994 299.2277543307085921 -77.5039370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 113.9559448818897636 Td
+(Here is a 200-500 token summary answering the sub-question "Explicit lock) Tj
+T* (advantages" with conflicts noted: Web Locks API suggests using explicit locking for) Tj
+T* (untrusted web content to prevent timing attacks. Filipsnastins') Tj
+T* (concurrency-control-with-dynamodb example shows that explicit locking can be used in) Tj
+T* (PostgreSQL, but requires careful consideration of database features. Hibernate-ORM) Tj
+T* (recommends pessimistic locking as a default approach, which may not be suitable for all) Tj
+T* (use cases. Spirit's migrate.md document notes that explicit locks can cause excessive) Tj
+T* (locking and should be avoided unless necessary. The possibly excessive locking issue) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 10571
+>>
+stream
+0. w
+0.78 G
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 801.8899999999999864 196.0457700787401052 -17.1289370078740149 re
+f
+BT
+/F2 7.5 Tf
+8.625 TL
+1. g
+43.9370078740157552 791.2630314960629221 Td
+(Question) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+235.7308094488188601 801.8899999999999864 299.2277543307085921 -17.1289370078740149 re
+f
+BT
+/F2 7.5 Tf
+8.625 TL
+1. g
+239.9827779527558675 791.2630314960629221 Td
+(Summarized response) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 784.7610629921259715 196.0457700787401052 -34.3789370078740077 re
+f
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 784.7610629921259715 299.2277543307085921 -34.3789370078740077 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 774.1340944881890209 Td
+(suggests that explicit locks can lead to high performance but may also introduce lock) Tj
+T* (contention. RouteInfoManager's feature suggests using segmented locking for improved) Tj
+T* (concurrency and consistency, with a 93.75% reduction in lock…) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 750.3821259842519567 196.0457700787401052 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 739.7551574803150061 Td
+(explicit lock disadvantages) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+235.7308094488188601 750.3821259842519567 299.2277543307085921 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 739.7551574803150061 Td
+(Here is a 200-500 token summary answering the sub-question "Explicit Lock) Tj
+T* (Disadvantages": Explicit locks are typically required for systems that require isolation \(as) Tj
+T* (in ACID\) and concurrency control, such as databases. However, they can have several) Tj
+T* (disadvantages. They often require explicit locking of objects, which can be inconvenient) Tj
+T* (for applications that need to perform multiple operations on the same data) Tj
+T* (simultaneously. Explicit locks can lead to slower reads and compaction processes in) Tj
+T* (certain data structures like LSM-Trees and B-Trees. * Optimistic locking is a technique) Tj
+T* (used by some systems \(like PostgreSQL\) that allows transactions to proceed even if) Tj
+T* (some data has been modified since they started. However, explicit locking can be more) Tj
+T* (efficient than optimistic locking for certain use cases.…) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 655.6281889763779418 196.0457700787401052 -120.6289370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 645.0012204724409912 Td
+(performance comparison) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 655.6281889763779418 299.2277543307085921 -120.6289370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 645.0012204724409912 Td
+(Performance Comparison The provided excerpts compare various CPUs from different) Tj
+T* (manufacturers across different benchmarks. Here's a summary of the key findings: The) Tj
+T* (PassMark CPU Benchmark \(https://www.cpubenchmark.net/singleCompare.php\)) Tj
+T* (compares up to 5 different CPUs, including Intel Core Ultra 7 270K Plus, Intel Core Ultra) Tj
+T* (9 285K, Apple M2 8 Core 3500 MHz, and AMD Ryzen AI 9 HX 370. The CPU) Tj
+T* (UserBenchmarks - 1424 Processors Compared \(https://cpu.userbenchmark.com/\)) Tj
+T* (provides a comprehensive comparison of 1424 processors from various manufacturers,) Tj
+T* (including Intel Core i7-11700K, AMD Ryzen 9 5900X, and Apple M1 Pro. The CPU) Tj
+T* (Comparison: Performance Tests – NanoReview) Tj
+T* (\(https://nanoreview.net/en/cpu-compare\) compares desktop processors from different) Tj
+T* (manufacturers, including Apple M5 Pro, Apple M5 Max, and Intel Core Ultra X9 388H.) Tj
+T* (Puget Bench Compare Results) Tj
+T* (\(https://www.pugetsystems.com/pugetbench/results/compare/\) provides…) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 534.9992519685039269 196.0457700787401052 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 524.3722834645668627 Td
+(thread safety vs performance) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+235.7308094488188601 534.9992519685039269 299.2277543307085921 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 524.3722834645668627 Td
+(Here is a 200-500 token summary answering the sub-question "thread safety vs) Tj
+T* (performance" based on the provided sources: Thread safety and performance are two) Tj
+T* (competing concerns in software systems that continuously evolve due to new) Tj
+T* (functionalities or maintenance activities. On one hand, multi-objective algorithms have) Tj
+T* (shown the ability to discover alternatives by pursuing different objectives simultaneously.) Tj
+T* (However, their high computational complexity may lead to poor performance if not) Tj
+T* (carefully designed \(Source: Performance of Genetic Algorithms in the Context of) Tj
+T* (Software Model Refactoring\). On the other hand, a modern thread pool implementation) Tj
+T* (can achieve high-performance scientific computing while providing precise low-level) Tj
+T* (control over thread details. This approach is particularly useful for tasks that require) Tj
+T* (fine-grained parallelism and minimal overhead \(Source: A…) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 431.6203149606299121 196.0457700787401052 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 420.9933464566929615 Td
+(synchronized block vs explicit lock in multithreaded) Tj
+T* (environment) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 431.6203149606299121 299.2277543307085921 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 420.9933464566929615 Td
+(Here is a 200–500 token summary answering the sub-question "synchronized block vs) Tj
+T* (explicit lock in multithreaded environment" based on the provided sources: The main) Tj
+T* (difference between synchronized blocks and explicit locks lies in their purpose and) Tj
+T* (usage. Synchronized blocks are used to synchronize access to shared resources,) Tj
+T* (ensuring that only one thread can execute a particular section of code at a time. They) Tj
+T* (hold a lock, which allows for exclusive access. In contrast, explicit locks, such as lock or) Tj
+T* (synchronized, require manual code to acquire and release the lock. This approach is) Tj
+T* (more verbose and error-prone compared to synchronized blocks. The GitHub repository) Tj
+T* ("Multi-threading-in-Java" by ZhianMai provides an example of using synchronized) Tj
+T* (blocks in a multithreaded environment, where all locking…) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 336.8663779527558404 196.0457700787401052 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 326.2394094488189467 Td
+(Follow-up sub-question #1) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+235.7308094488188601 336.8663779527558404 299.2277543307085921 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 326.2394094488189467 Td
+(Based on the provided sources, here is a 200-500 token summary answering the) Tj
+T* (sub-question: Synchronized blocks are used to prevent multiple threads from executing) Tj
+T* (a portion of code in a method at the same point in time. They provide better) Tj
+T* (performance compared to explicit locks, especially when the entire method needs to be) Tj
+T* (synchronized. On the other hand, explicit locks \(e.g., lock\(\), unlock\(\)\) offer more) Tj
+T* (flexibility and advanced features, such as fairness and tryLock methods, which can) Tj
+T* (improve thread safety. A Java Synchronized Block is a block of code that prevents) Tj
+T* (multiple threads from executing it simultaneously. It provides better performance) Tj
+T* (compared to explicit locks but has limitations in terms of control over lock management.) Tj
+T* (The main advantages of using…) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 242.1124409448818824 196.0457700787401052 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 231.4854724409449318 Td
+(Follow-up sub-question #2) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 242.1124409448818824 299.2277543307085921 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 231.4854724409449318 Td
+(Based on the provided sources, here is a 200-500 token summary answering the) Tj
+T* (sub-question: The trade-offs between synchronized blocks and explicit locks in Java) Tj
+T* (depend on the specific use case. Synchronized blocks are simpler to use for basic) Tj
+T* (locking needs but may not provide sufficient control over concurrency. Explicit locks,) Tj
+T* (introduced in Java 1.5, offer greater flexibility and advanced features, such as support) Tj
+T* (for read-write locks. In general, if you're using java.util.concurrent.locks, it's) Tj
+T* (recommended to avoid using synchronized blocks due to their limited functionality.) Tj
+T* (Instead, use explicit locking mechanisms like lock.lock\(\) and lock.unlock\(\). This) Tj
+T* (approach provides better control over concurrency and can improve performance in) Tj
+T* (certain scenarios. The key differences between synchronized blocks and explicit locks) Tj
+T* (lie in their capabilities…) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 138.7335039370079244 196.0457700787401052 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 128.106535433070917 Td
+(Follow-up sub-question #3) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+235.7308094488188601 138.7335039370079244 299.2277543307085921 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 128.106535433070917 Td
+(Here is a 200-500 token summary answering the sub-question: The performance) Tj
+T* (implications of using synchronized blocks versus explicit locks in multithreaded) Tj
+T* (applications can vary depending on the specific use case and implementation.) Tj
+T* (Synchronized blocks, which acquire a lock before accessing shared resources, are) Tj
+T* (generally faster than explicit locks because they bypass the JVM's built-in support for) Tj
+T* (acquiring an object's lock and exception handling. However, there is evidence to) Tj
+T* (suggest that synchronized blocks may not always be the best choice due to contention) Tj
+T* (issues when multiple threads try to acquire the same lock simultaneously. This can lead) Tj
+T* (to performance degradation and even kill parallelism. Explicit locks, on the other hand,) Tj
+T* (are more performant because they manage the locking status in a…) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 10302
+>>
+stream
+0. w
+0.78 G
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 801.8899999999999864 196.0457700787401052 -17.1289370078740149 re
+f
+BT
+/F2 7.5 Tf
+8.625 TL
+1. g
+43.9370078740157552 791.2630314960629221 Td
+(Question) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+235.7308094488188601 801.8899999999999864 299.2277543307085921 -17.1289370078740149 re
+f
+BT
+/F2 7.5 Tf
+8.625 TL
+1. g
+239.9827779527558675 791.2630314960629221 Td
+(Summarized response) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 784.7610629921259715 196.0457700787401052 -86.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 774.1340944881890209 Td
+(Follow-up sub-question #4) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 784.7610629921259715 299.2277543307085921 -86.1289370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 774.1340944881890209 Td
+(Based on the provided sources, here are some common pitfalls or edge cases when) Tj
+T* (using synchronized blocks versus explicit locks: 1. Mutual Exclusion: Using) Tj
+T* (synchronized blocks can lead to mutual exclusion issues if not used carefully, as only) Tj
+T* (one thread can execute a block guarded by the same monitor object at a time. 2.) Tj
+T* (Visibility: The visibility of a lock can be affected by how it is used in conjunction with) Tj
+T* (other synchronization mechanisms, such as ReentrantLock. 3. Hard to Maintain: Using) Tj
+T* (string literals as locks makes it difficult to track where and why certain locks are being) Tj
+T* (acquired, leading to maintenance challenges. 4. Less Concurrency Due to Locking the) Tj
+T* (Entire Method or Class: Using a lock can reduce concurrency…) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 698.6321259842519567 196.0457700787401052 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 688.0051574803148924 Td
+(Follow-up sub-question #5) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+235.7308094488188601 698.6321259842519567 299.2277543307085921 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 688.0051574803148924 Td
+(Based on the provided sources, alternative synchronization mechanisms that can be) Tj
+T* (used in place of synchronized blocks or explicit locks include: 1. AtomicReference: This) Tj
+T* (class provides thread-safe methods for updating and comparing references. 2.) Tj
+T* (AtomicLong: Similar to AtomicReference, this class offers thread-safe operations for) Tj
+T* (updating and comparing long values. 3. ReentrantLock: As mentioned in the YouTube) Tj
+T* (video, ReentrantLock is an advanced alternative to synchronized blocks that allows for) Tj
+T* (more fine-grained control over locking and unlocking. 4.) Tj
+T* (java.util.concurrent.locks.ReentrantLock: This is a built-in class provided by Java's) Tj
+T* (concurrency package that offers similar functionality to ReentrantLock. These) Tj
+T* (alternatives offer improved performance, flexibility, and thread safety compared to) Tj
+T* (traditional synchronized blocks or explicit locks.) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 595.2531889763779418 196.0457700787401052 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 584.6262204724409912 Td
+(Follow-up sub-question #6) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 595.2531889763779418 299.2277543307085921 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 584.6262204724409912 Td
+(Here is a 200–500 token summary answering the sub-question about using) Tj
+T* (ReentrantLock: ReentrantLock can be used to achieve more fine-grained control over) Tj
+T* (lock behavior compared to synchronized constructs, which require explicit block) Tj
+T* (structure and may not provide interruptible locking. However, its flexibility comes at the) Tj
+T* (cost of requiring explicit lock/unlock calls, such as try-finally blocks. In contrast,) Tj
+T* (ReentrantLock provides a more structured approach to concurrency, allowing for better) Tj
+T* (synchronization in multithreading environments. Its ability to hold locks across method) Tj
+T* (calls is particularly useful when non-blocking behavior is required. However,) Tj
+T* (ReentrantLock's flexibility also means that it can be less efficient than synchronized) Tj
+T* (constructs in certain scenarios, such as when the same lock is held multiple times within) Tj
+T* (a single thread. Additionally,…) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 491.8742519685039269 196.0457700787401052 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 481.2472834645669195 Td
+(Follow-up sub-question #7) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+235.7308094488188601 491.8742519685039269 299.2277543307085921 -103.3789370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 481.2472834645669195 Td
+(Here's a 200–500 token summary answering the sub-question: Mutual exclusion issues) Tj
+T* (when using synchronized blocks are crucial to understand, particularly in scenarios) Tj
+T* (where multiple threads need to access shared resources simultaneously. The prevailing) Tj
+T* (method of mutual exclusion is to use a mutex \(mutual exclusion\) where each thread) Tj
+T* (must take its turn accessing the shared resource. This ensures that no two threads can) Tj
+T* (access the resource at the same time, preventing race conditions and ensuring safety.) Tj
+T* (However, using synchronized blocks without wait\(\) or compareAndSwap can lead to) Tj
+T* (busy waiting, which may not be efficient in all cases. Synchronizing threads effectively) Tj
+T* (requires a deep understanding of synchronization primitives like mutexes, semaphores,) Tj
+T* (test-and-set, spinlocks, and blocking. These mechanisms can help ensure mutual) Tj
+T* (exclusion…) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 388.4953149606299689 196.0457700787401052 -120.6289370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 377.8683464566929615 Td
+(Follow-up sub-question #8) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 388.4953149606299689 299.2277543307085921 -120.6289370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 377.8683464566929615 Td
+(Here is a 200–500 token summary answering the sub-question "Use AtomicReference) Tj
+T* (or AtomicLong for thread-safe updates and comparisons" with conflicts noted where) Tj
+T* (sources disagree: To ensure thread safety when updating shared values in Java,) Tj
+T* (consider using either AtomicReference or AtomicLong. Both classes provide atomic) Tj
+T* (operations that can resolve race conditions. However, there is a conflict between the) Tj
+T* (two approaches. The article by OpenLiberty.io suggests using AtomicReference alone) Tj
+T* (for thread-safe updates and comparisons) Tj
+T* (\(https://openliberty.io/blog/2021/09/21/building-on-atomic-reference.html\). This approach) Tj
+T* (can be used for simple cases where multiple threads need to update a shared value) Tj
+T* (without the need for explicit locks. On the other hand, the article by Stack Overflow) Tj
+T* (suggests using AtomicLong instead of AtomicReference when you need to compare and) Tj
+T* (set values \(https://stackoverflow.com/questions/37716360/why-do-we-need-to-compare) Tj
+T* (andset-when-set-is-already-atomic-in-java\).…) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 267.8663779527559541 196.0457700787401052 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 257.2394094488189467 Td
+(Follow-up sub-question #9) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+235.7308094488188601 267.8663779527559541 299.2277543307085921 -94.7539370078740149 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 257.2394094488189467 Td
+(Based on the provided sources, here is a 200-500 token summary answering the) Tj
+T* (sub-question: Synchronized blocks and explicit locks offer different trade-offs between) Tj
+T* (performance and complexity. Synchronized blocks are generally faster due to their low) Tj
+T* (overhead, but may lead to deadlocks if not used carefully. Explicit locks, such as) Tj
+T* (ReentrantLock, provide mutual exclusion but require more code and can be less efficient) Tj
+T* (in certain scenarios. In terms of ease of use, synchronized blocks are often preferred for) Tj
+T* (simple use cases, while explicit locks are better suited for complex scenarios where) Tj
+T* (thread safety is critical. However, the choice between the two ultimately depends on the) Tj
+T* (specific requirements of the application. The sources also highlight that Java) Tj
+T* (Performance: synchronized\(\) vs Lock |…) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 173.1124409448819677 196.0457700787401052 -112.0039370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+43.9370078740157552 162.4854724409450455 Td
+(Follow-up sub-question #10) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+235.7308094488188601 173.1124409448819677 299.2277543307085921 -112.0039370078740006 re
+f
+BT
+/F1 7.5 Tf
+8.625 TL
+0.314 g
+239.9827779527558675 162.4854724409450455 Td
+(Here are 200-500 token summaries answering the sub-question "Consider alternative) Tj
+T* (synchronization mechanisms, such as ReentrantLock or java.util.concurrent.locks" with) Tj
+T* (conflicts noted: 1. ReentrantLock vs Synchronized: Both provide mutual exclusion but) Tj
+T* (ReentrantLock offers more control and features like timed locking and non-blocking) Tj
+T* (attempts. However, synchronized is a JVM-managed object that can perform fancy) Tj
+T* (things like lock escalation and de-escalation. 2. Comparison of Synchronized and) Tj
+T* (ReentrantLock performance: A study found that ReentrantLock outperforms) Tj
+T* (synchronized in certain scenarios due to its ability to handle high-frequency read) Tj
+T* (operations compared to write operations. 3. ReentrantLock as a complete replacement) Tj
+T* (for synchronization: A question on Stack Overflow suggests that ReentrantLock is not a) Tj
+T* (complete replacement for synchronization, but rather an alternative tool with similar) Tj
+T* (functionality. 4. Understanding…) Tj
+ET
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 38.4313385826773128 Td
+(Models & run parameters) Tj
+ET
+0. G
+0.5670000000000001 w
+endstream
+endobj
+11 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 25503
+>>
+stream
+0.5670000000000001 w
+0. G
+0. G
+0.5670000000000001 w
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 801.8899999999999864 258.3766971241055899 -17.7039370078740141 re
+f
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+1. g
+43.9370078740157552 790.8380314960629676 Td
+(Parameter) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+298.0617364941843448 801.8899999999999864 257.5332241357368162 -17.7039370078740141 re
+f
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+1. g
+302.3137049981213522 790.8380314960629676 Td
+(Value) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 784.186062992125926 258.3766971241055899 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 773.1340944881890209 Td
+(model_fast) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+298.0617364941843448 784.186062992125926 257.5332241357368162 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+302.3137049981213522 773.1340944881890209 Td
+(ollama/llama3.2:1b) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 766.4821259842519794 258.3766971241055899 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 755.4301574803149606 Td
+(model_strong) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+298.0617364941843448 766.4821259842519794 257.5332241357368162 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+302.3137049981213522 755.4301574803149606 Td
+(ollama/llama3.2:3b) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 748.7781889763779191 258.3766971241055899 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 737.7262204724409003 Td
+(embedding_model) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+298.0617364941843448 748.7781889763779191 257.5332241357368162 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+302.3137049981213522 737.7262204724409003 Td
+(ollama/nomic-embed-text) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 731.0742519685039724 258.3766971241055899 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 720.0222834645669536 Td
+(similarity_mode) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+298.0617364941843448 731.0742519685039724 257.5332241357368162 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+302.3137049981213522 720.0222834645669536 Td
+(tfidf) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 713.3703149606299121 258.3766971241055899 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 702.3183464566928933 Td
+(session_cost_limit_usd) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+298.0617364941843448 713.3703149606299121 257.5332241357368162 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+302.3137049981213522 702.3183464566928933 Td
+(0) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 695.6663779527558518 258.3766971241055899 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 684.614409448818833 Td
+(max_parallel_agent_calls) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+298.0617364941843448 695.6663779527558518 257.5332241357368162 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+302.3137049981213522 684.614409448818833 Td
+(10) Tj
+ET
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 655.2852755905512367 Td
+(Agent steps \(wall time per node\)) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 649.6159842519684844 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+1. g
+43.9370078740157552 638.5640157480314656 Td
+(Agent id) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+147.4015748031496287 649.6159842519684844 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+1. g
+151.6535433070866361 638.5640157480314656 Td
+(Label) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+442.2091338582676485 649.6159842519684844 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+1. g
+446.4611023622046559 638.5640157480314656 Td
+(Duration \(s\)) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+504.5713385826770718 649.6159842519684844 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+1. g
+508.8233070866140793 638.5640157480314656 Td
+(Outcome) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 631.9120472440945377 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 620.860078740157519 Td
+(planner) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+147.4015748031496287 631.9120472440945377 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 620.860078740157519 Td
+(Planner) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+442.2091338582676485 631.9120472440945377 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 620.860078740157519 Td
+(24.42) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+504.5713385826770718 631.9120472440945377 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 620.860078740157519 Td
+(ok) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 614.2081102362204774 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 603.1561417322834586 Td
+(parallel_search) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+147.4015748031496287 614.2081102362204774 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 603.1561417322834586 Td
+(Parallel Search) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+442.2091338582676485 614.2081102362204774 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 603.1561417322834586 Td
+(238.98) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+504.5713385826770718 614.2081102362204774 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 603.1561417322834586 Td
+(ok) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 596.5041732283464171 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 585.452204724409512 Td
+(critic) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+147.4015748031496287 596.5041732283464171 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 585.452204724409512 Td
+(Critic) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+442.2091338582676485 596.5041732283464171 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 585.452204724409512 Td
+(72.94) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+504.5713385826770718 596.5041732283464171 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 585.452204724409512 Td
+(ok) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 578.8002362204724704 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 567.7482677165354517 Td
+(critic_route_prepare) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+147.4015748031496287 578.8002362204724704 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 567.7482677165354517 Td
+(Critic router) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+442.2091338582676485 578.8002362204724704 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 567.7482677165354517 Td
+(0) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+504.5713385826770718 578.8002362204724704 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 567.7482677165354517 Td
+(ok) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 561.0962992125984101 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 550.0443307086613913 Td
+(parallel_search) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+147.4015748031496287 561.0962992125984101 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 550.0443307086613913 Td
+(Parallel Search) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+442.2091338582676485 561.0962992125984101 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 550.0443307086613913 Td
+(161.7) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+504.5713385826770718 561.0962992125984101 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 550.0443307086613913 Td
+(ok) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 543.3923622047244635 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 532.3403937007874447 Td
+(critic) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+147.4015748031496287 543.3923622047244635 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 532.3403937007874447 Td
+(Critic) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+442.2091338582676485 543.3923622047244635 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 532.3403937007874447 Td
+(56.59) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+504.5713385826770718 543.3923622047244635 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 532.3403937007874447 Td
+(ok) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 525.6884251968504032 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 514.6364566929133844 Td
+(critic_route_prepare) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+147.4015748031496287 525.6884251968504032 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 514.6364566929133844 Td
+(Critic router) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+442.2091338582676485 525.6884251968504032 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 514.6364566929133844 Td
+(0) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+504.5713385826770718 525.6884251968504032 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 514.6364566929133844 Td
+(ok) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 507.9844881889763997 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 496.9325196850393809 Td
+(parallel_search) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+147.4015748031496287 507.9844881889763997 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 496.9325196850393809 Td
+(Parallel Search) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+442.2091338582676485 507.9844881889763997 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 496.9325196850393809 Td
+(156.8) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+504.5713385826770718 507.9844881889763997 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 496.9325196850393809 Td
+(ok) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 490.2805511811023962 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 479.2285826771653774 Td
+(critic) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+147.4015748031496287 490.2805511811023962 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 479.2285826771653774 Td
+(Critic) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+442.2091338582676485 490.2805511811023962 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 479.2285826771653774 Td
+(61.56) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+504.5713385826770718 490.2805511811023962 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 479.2285826771653774 Td
+(ok) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 472.5766141732283359 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 461.5246456692913739 Td
+(extract_claims) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+147.4015748031496287 472.5766141732283359 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 461.5246456692913739 Td
+(Extract Claims) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+442.2091338582676485 472.5766141732283359 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 461.5246456692913739 Td
+(182.97) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+504.5713385826770718 472.5766141732283359 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 461.5246456692913739 Td
+(ok) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 454.8726771653542755 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 443.8207086614173136 Td
+(fact_check) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+147.4015748031496287 454.8726771653542755 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 443.8207086614173136 Td
+(Fact Check) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+442.2091338582676485 454.8726771653542755 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 443.8207086614173136 Td
+(42.18) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+504.5713385826770718 454.8726771653542755 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 443.8207086614173136 Td
+(ok) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 437.1687401574803289 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 426.1167716535433669 Td
+(synthesize) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+147.4015748031496287 437.1687401574803289 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 426.1167716535433669 Td
+(Synthesize) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+442.2091338582676485 437.1687401574803289 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 426.1167716535433669 Td
+(171.3) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+504.5713385826770718 437.1687401574803289 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 426.1167716535433669 Td
+(ok) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 419.4648031496063254 107.7165354330708738 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+43.9370078740157552 408.4128346456693635 Td
+(citation_format) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+147.4015748031496287 419.4648031496063254 294.8075590551180198 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+151.6535433070866361 408.4128346456693635 Td
+(Citation formatter) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+442.2091338582676485 419.4648031496063254 62.3622047244094517 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+446.4611023622046559 408.4128346456693635 Td
+(0.02) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+504.5713385826770718 419.4648031496063254 51.0236220472441033 -17.7039370078740141 re
+f
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.314 g
+508.8233070866140793 408.4128346456693635 Td
+(ok) Tj
+ET
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 379.0837007874016535 Td
+(Verified claims & trust) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 373.414409448818958 79.3700787401574814 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+43.9370078740157552 363.212440944881962 Td
+(Trust \(band / score\)) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+119.0551181102362364 373.414409448818958 192.7559055118110507 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+123.3070866141732438 363.212440944881962 Td
+(Claim \(excerpt\)) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+311.8110236220472871 373.414409448818958 221.102362204724443 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+316.0629921259842945 363.212440944881962 Td
+(Cited / verified sources) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 356.8604724409449886 79.3700787401574814 -56.803937007874012 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 346.6585039370079926 Td
+(MODERATE \(62\)) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+119.0551181102362364 356.8604724409449886 192.7559055118110507 -56.803937007874012 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+123.3070866141732438 346.6585039370079926 Td
+(Research note tied to retrieved source) Tj
+T* ([src_b9e218c7f2b8eca5] for «What are the main trade-offs) Tj
+T* (between synchronized blocks vs explicit locks in java?»:) Tj
+T* (Even while t is in its synchronized block, another thread can) Tj
+T* (dangerously mutate the object, simply by neglecting to use) Tj
+T* (synchronized itself. In order to use an) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+311.8110236220472871 356.8604724409449886 221.102362204724443 -56.803937007874012 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+316.0629921259842945 346.6585039370079926 Td
+(Reading 22: Locks and Synchronization - MIT —) Tj
+T* (https://web.mit.edu/6.031/www/sp20/classes/22-locks/) Tj
+ET
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 277.379370078740294 Td
+(Source catalog \(URLs from graph state\)) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 271.7100787401575985 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+43.9370078740157552 261.5081102362205456 Td
+(Source id) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+102.0472440944882067 271.7100787401575985 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+106.2992125984252141 261.5081102362205456 Td
+(Title) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+286.2992125984252425 271.7100787401575985 240.9448818897637921 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+290.5511811023622499 261.5081102362205456 Td
+(URL) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 255.1561417322835723 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 244.9541732283465763 Td
+(src_981ae27089) Tj
+T* (715cf5) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 255.1561417322835723 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 244.9541732283465763 Td
+(Advantages of [ Synchronized Block ] over [) Tj
+T* (Synchronized Method ]) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 255.1561417322835723 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 244.9541732283465763 Td
+(https://medium.com/@codingsprint/advantages-of-synchronized-block-over-) Tj
+T* (synchronized-method-c2f04449db3a) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 230.5522047244095916 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 220.3502362204726523 Td
+(src_0a965e41b5) Tj
+T* (c73198) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 230.5522047244095916 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 220.3502362204726523 Td
+(java - Is there an advantage to use a Synchronized) Tj
+T* (Method instead ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 230.5522047244095916 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 220.3502362204726523 Td
+(https://stackoverflow.com/questions/574240/is-there-an-advantage-to-use-a) Tj
+T* (-synchronized-method-instead-of-a-synchronized-blo) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 205.9482677165356108 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 195.7462992125986148 Td
+(src_3fd564e8753) Tj
+T* (378ce) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 205.9482677165356108 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 195.7462992125986148 Td
+(Concurrency in Java: Mastering Synchronized Blocks for) Tj
+T* (Thread ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 205.9482677165356108 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 195.7462992125986148 Td
+(https://www.linkedin.com/pulse/concurrency-java-mastering-synchronized-b) Tj
+T* (locks-thread-elham-moharrami-61bsf) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 181.3443307086616301 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 171.1423622047246909 Td
+(src_e9891395f44) Tj
+T* (ad2ec) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 181.3443307086616301 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 171.1423622047246909 Td
+(What is a Java Synchronized Block? Examples &) Tj
+T* (Advantages) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 181.3443307086616301 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 171.1423622047246909 Td
+(https://blog.fastthread.io/java-synchronized-block/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 156.7403937007876493 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 146.5384251968506533 Td
+(src_8f249f75360) Tj
+T* (3727f) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 156.7403937007876493 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 146.5384251968506533 Td
+(Why Most Java synchronized Blocks Are a Performance) Tj
+T* (Trap \(And ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 156.7403937007876493 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 146.5384251968506533 Td
+(https://medium.com/@reallyouttaworld/why-most-java-synchronized-blocks-) Tj
+T* (are-a-performance-trap-and-what-to-use-instead-12a67f6a29be) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 132.1364566929136686 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 121.9344881889767294 Td
+(src_893ed7869a) Tj
+T* (27f186) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 132.1364566929136686 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 121.9344881889767294 Td
+(Java Method and Block Synchronization -) Tj
+T* (GeeksforGeeks) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 132.1364566929136686 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 121.9344881889767294 Td
+(https://www.geeksforgeeks.org/java/method-block-synchronization-java/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 107.5325196850396026 62.3622047244094517 -32.6539370078740134 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 97.3305511811025781 Td
+(src_f5c25705932) Tj
+T* (c137a) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 107.5325196850396026 184.2519685039370358 -32.6539370078740134 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 97.3305511811025781 Td
+(In Java, what happens under the hood when we use) Tj
+T* (synchronized ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 107.5325196850396026 240.9448818897637921 -32.6539370078740134 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 97.3305511811025781 Td
+(https://www.quora.com/In-Java-what-happens-under-the-hood-when-we-us) Tj
+T* (e-synchronized-block-method-How-does-synchronized-keyword-work-intern) Tj
+T* (ally) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 74.8785826771655536 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 64.6766141732284723 Td
+(src_ec8af8d55b0) Tj
+T* (9c26c) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 74.8785826771655536 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 64.6766141732284723 Td
+(synchronized method vs synchronized block having) Tj
+T* (same number of ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 74.8785826771655536 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 64.6766141732284723 Td
+(https://www.reddit.com/r/learnjava/comments/nnkxrb/synchronized_method) Tj
+T* (_vs_synchronized_block_having/) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+endstream
+endobj
+13 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 14 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 23886
+>>
+stream
+0. w
+0.78 G
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 801.8899999999999864 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+43.9370078740157552 791.6880314960629903 Td
+(Source id) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+102.0472440944882067 801.8899999999999864 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+106.2992125984252141 791.6880314960629903 Td
+(Title) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+286.2992125984252425 801.8899999999999864 240.9448818897637921 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+290.5511811023622499 791.6880314960629903 Td
+(URL) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 785.336062992126017 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 775.1340944881890209 Td
+(src_3d7fa051b4b) Tj
+T* (eecf2) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 785.336062992126017 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 775.1340944881890209 Td
+(Synchronized vs ReentrantLock | Concurrency Interview) Tj
+T* (- AlgoMaster) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 785.336062992126017 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 775.1340944881890209 Td
+(https://algomaster.io/learn/concurrency-interview/java-synchronized-vs-reen) Tj
+T* (trantlock) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 760.7321259842519794 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 750.5301574803149833 Td
+(src_85954d986f3) Tj
+T* (fdd9b) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 760.7321259842519794 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 750.5301574803149833 Td
+(Implications from analyticity constraints used in a) Tj
+T* (Landshoff-Donnachie fit) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 760.7321259842519794 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 750.5301574803149833 Td
+(https://arxiv.org/abs/hep-ph/0605216v1) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 736.1281889763779418 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 725.9262204724409457 Td
+(src_3cf3b8cffc0a) Tj
+T* (98dd) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 736.1281889763779418 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 725.9262204724409457 Td
+(The gravitational torque of bars in optically unbarred and) Tj
+T* (barred galaxies) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 736.1281889763779418 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 725.9262204724409457 Td
+(https://arxiv.org/abs/astro-ph/0106019v1) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 711.5242519685039042 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 701.3222834645669082 Td
+(src_f59dd889df4f) Tj
+T* (5bf9) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 711.5242519685039042 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 701.3222834645669082 Td
+(New analyticity constraints on the high energy behavior) Tj
+T* (of hadron-hadron cross sections) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 711.5242519685039042 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 701.3222834645669082 Td
+(https://arxiv.org/abs/hep-ph/0601210v3) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 686.9203149606298666 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 676.7183464566928706 Td
+(src_5d553da2bc) Tj
+T* (729a51) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 686.9203149606298666 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 676.7183464566928706 Td
+(Fock spaces and refined Severi degrees) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 686.9203149606298666 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 676.7183464566928706 Td
+(https://arxiv.org/abs/1409.4868v1) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 662.316377952755829 62.3622047244094517 -32.6539370078740134 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 652.114409448818833 Td
+(src_c3f8be1a5c4) Tj
+T* (00381) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 662.316377952755829 184.2519685039370358 -32.6539370078740134 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 652.114409448818833 Td
+(A new numerical method for obtaining gluon distribution) Tj
+T* (functions $G\(x,Q^2\)=xg\(x,Q^2\)$, from the proton) Tj
+T* (structure functi) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 662.316377952755829 240.9448818897637921 -32.6539370078740134 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 652.114409448818833 Td
+(https://arxiv.org/abs/0907.4790v1) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 629.6624409448818369 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 619.4604724409448409 Td
+(src_04a1ba9680) Tj
+T* (65bb6b) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 629.6624409448818369 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 619.4604724409448409 Td
+(Web Locks API #217 - w3ctag/design-reviews - GitHub) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 629.6624409448818369 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 619.4604724409448409 Td
+(https://github.com/w3ctag/design-reviews/issues/217) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 605.0585039370077993 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 594.8565354330708033 Td
+(src_1074adbb70) Tj
+T* (265c7d) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 605.0585039370077993 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 594.8565354330708033 Td
+(filipsnastins/concurrency-control-with-dynamodb:) Tj
+T* (Examples ... - GitHub) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 605.0585039370077993 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 594.8565354330708033 Td
+(https://github.com/filipsnastins/concurrency-control-with-dynamodb) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 580.4545669291338754 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 570.2525984251967657 Td
+(src_77f7d8e2b08) Tj
+T* (3ec37) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 580.4545669291338754 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 570.2525984251967657 Td
+(Locking - hibernate-orm - GitHub) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 580.4545669291338754 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 570.2525984251967657 Td
+(https://github.com/hibernate/hibernate-orm/blob/master/documentation/src/) Tj
+T* (main/asciidoc/userguide/chapters/locking/Locking.adoc) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 555.8506299212598378 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 545.6486614173227281 Td
+(src_bc24cdee2ba) Tj
+T* (e33ee) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 555.8506299212598378 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 545.6486614173227281 Td
+(spirit/docs/migrate.md at main · block/spirit · GitHub) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 555.8506299212598378 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 545.6486614173227281 Td
+(https://github.com/block/spirit/blob/main/docs/migrate.md) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 531.2466929133856866 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 521.0447244094486905 Td
+(src_879ab7c934) Tj
+T* (531c9b) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 531.2466929133856866 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 521.0447244094486905 Td
+(Possibly excessive locking in the upsert function · Issue) Tj
+T* (#296 - GitHub) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 531.2466929133856866 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 521.0447244094486905 Td
+(https://github.com/JasperFx/marten/issues/296) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 506.6427559055117626 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 496.4407874015747666 Td
+(src_2b7f1735991) Tj
+T* (39236) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 506.6427559055117626 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 496.4407874015747666 Td
+([Feature  ] Implement segmented locking in) Tj
+T* (RouteInfoManager for ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 506.6427559055117626 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 496.4407874015747666 Td
+(https://github.com/mxsm/rocketmq-rust/issues/4279) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 482.0388188976377819 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 471.836850393700729 Td
+(src_21a38a10eb) Tj
+T* (4f50b4) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 482.0388188976377819 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 471.836850393700729 Td
+(decoupling stable CI and incompatibilities discovery \(let's) Tj
+T* (use lock ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 482.0388188976377819 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 471.836850393700729 Td
+(https://github.com/astropy/astropy/issues/17596) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 457.4348818897636875 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 447.2329133858267483 Td
+(src_face2fde3b1) Tj
+T* (94fdb) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 457.4348818897636875 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 447.2329133858267483 Td
+(Multiprocess compatible FileSink using file locks #1257 -) Tj
+T* (GitHub) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 457.4348818897636875 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 447.2329133858267483 Td
+(https://github.com/Delgan/loguru/issues/1257) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 432.8309448818897067 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 422.6289763779527675 Td
+(src_e761b29ab5) Tj
+T* (c3b20b) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 432.8309448818897067 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 422.6289763779527675 Td
+(The Systems Engineer Interview - GitHub Gist) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 432.8309448818897067 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 422.6289763779527675 Td
+(https://gist.github.com/seanpianka/55269b93114ebbc03270e62431c40697) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 408.227007874015726 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 398.0250393700787868 Td
+(src_6217a2ecd6) Tj
+T* (148f1c) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 408.227007874015726 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 398.0250393700787868 Td
+(ahmedhammad97/Designing-Data-Intensive-Applications) Tj
+T* (-Notes) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 408.227007874015726 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 398.0250393700787868 Td
+(https://github.com/ahmedhammad97/Designing-Data-Intensive-Applications) Tj
+T* (-Notes) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 383.6230708661417452 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 373.421102362204806 Td
+(src_a53fcd48e8c) Tj
+T* (6aa0b) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 383.6230708661417452 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 373.421102362204806 Td
+(gino/docs/explanation/why.rst at master - GitHub) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 383.6230708661417452 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 373.421102362204806 Td
+(https://github.com/python-gino/gino/blob/master/docs/explanation/why.rst) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 359.0191338582677645 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 348.8171653543308253 Td
+(src_64430f13b90) Tj
+T* (f5af5) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 359.0191338582677645 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 348.8171653543308253 Td
+(Why NH encourage user to using transaction #2999 -) Tj
+T* (GitHub) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 359.0191338582677645 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 348.8171653543308253 Td
+(https://github.com/nhibernate/nhibernate-core/discussions/2999) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 334.4151968503937837 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 324.2132283464568445 Td
+(src_efe9a0e8e0e) Tj
+T* (18988) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 334.4151968503937837 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 324.2132283464568445 Td
+(PassMark - CPU Comparison) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 334.4151968503937837 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 324.2132283464568445 Td
+(https://www.cpubenchmark.net/singleCompare.php) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 309.811259842519803 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 299.6092913385828069 Td
+(src_7db1fef75b6) Tj
+T* (3df9f) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 309.811259842519803 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 299.6092913385828069 Td
+(CPU UserBenchmarks - 1424 Processors Compared) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 309.811259842519803 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 299.6092913385828069 Td
+(https://cpu.userbenchmark.com/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 285.2073228346458222 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 275.005354330708883 Td
+(src_20c323bee8) Tj
+T* (4b5353) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 285.2073228346458222 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 275.005354330708883 Td
+(CPU Comparison: Performance Tests – NanoReview) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 285.2073228346458222 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 275.005354330708883 Td
+(https://nanoreview.net/en/cpu-compare) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 260.6033858267718415 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 250.4014173228348454 Td
+(src_34e26514ac) Tj
+T* (20a299) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 260.6033858267718415 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 250.4014173228348454 Td
+(Puget Bench Compare Results) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 260.6033858267718415 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 250.4014173228348454 Td
+(https://www.pugetsystems.com/pugetbench/results/compare/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 235.9994488188978323 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 225.7974803149609215 Td
+(src_c01488e65e) Tj
+T* (8b58a2) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 235.9994488188978323 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 225.7974803149609215 Td
+(Geekbench 6 - Cross-Platform Benchmark) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 235.9994488188978323 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 225.7974803149609215 Td
+(https://www.geekbench.com/) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 211.3955118110238516 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 201.1935433070868839 Td
+(src_6abcbf07244) Tj
+T* (0f020) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 211.3955118110238516 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 201.1935433070868839 Td
+(Unbiased hardware comparisons) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 211.3955118110238516 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 201.1935433070868839 Td
+(https://technical.city/en) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 186.7915748031498708 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 176.58960629921296 Td
+(src_59f7904544d) Tj
+T* (70e64) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 186.7915748031498708 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 176.58960629921296 Td
+(Trusted source to compare CPU's? : r/buildapc - Reddit) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 186.7915748031498708 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 176.58960629921296 Td
+(https://www.reddit.com/r/buildapc/comments/1i4gwv3/trusted_source_to_co) Tj
+T* (mpare_cpus/) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 162.1876377952758901 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 151.9856692913389224 Td
+(src_99c5003caa0) Tj
+T* (26f7f) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 162.1876377952758901 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 151.9856692913389224 Td
+(PassMark PerformanceTest - PC benchmark software) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 162.1876377952758901 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 151.9856692913389224 Td
+(https://www.passmark.com/products/performancetest/?srsltid=AfmBOorqB) Tj
+T* (M4JU1sm3B73hIJA1l488x-mLhALyl_Je2Ea31vbNslD5pwn) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 137.5837007874018809 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 127.3817322834648849 Td
+(src_e346b879d4f) Tj
+T* (b3392) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 137.5837007874018809 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 127.3817322834648849 Td
+(PassMark - Videocard Comparison - Video Card) Tj
+T* (Benchmarks) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 137.5837007874018809 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 127.3817322834648849 Td
+(https://www.videocardbenchmark.net/singleCompare.php) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 112.9797637795278291 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 102.7777952755907336 Td
+(src_97174bfe43b) Tj
+T* (83b6a) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 112.9797637795278291 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 102.7777952755907336 Td
+(PassMark PerformanceTest - PC benchmark software) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 112.9797637795278291 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 102.7777952755907336 Td
+(https://www.passmark.com/products/performancetest/?srsltid=AfmBOoq6z) Tj
+T* (XwQbIc3SNFRTYfJ-Q4VOOjTmEYjHdmaJ1GNXhdPiHpzNGOa) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 88.3758267716538484 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 78.1738582677168097 Td
+(src_6334afe96b2) Tj
+T* (01099) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 88.3758267716538484 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 78.1738582677168097 Td
+(Performance of Genetic Algorithms in the Context of) Tj
+T* (Software Model Refactoring) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 88.3758267716538484 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 78.1738582677168097 Td
+(https://arxiv.org/abs/2308.13875v1) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 63.7718897637798605 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 53.5699212598427721 Td
+(src_36f76b28b3f) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 63.7718897637798605 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 53.5699212598427721 Td
+(Laser pointer prohibition: improving safety or driving) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 63.7718897637798605 240.9448818897637921 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 53.5699212598427721 Td
+(https://arxiv.org/abs/1406.4924v1) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+endstream
+endobj
+15 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 24401
+>>
+stream
+0. w
+0.78 G
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 801.8899999999999864 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+43.9370078740157552 791.6880314960629903 Td
+(Source id) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+102.0472440944882067 801.8899999999999864 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+106.2992125984252141 791.6880314960629903 Td
+(Title) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+286.2992125984252425 801.8899999999999864 240.9448818897637921 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+290.5511811023622499 791.6880314960629903 Td
+(URL) Tj
+ET
+0. G
+0.5670000000000001 w
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 785.336062992126017 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 775.1340944881890209 Td
+(a5352) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 785.336062992126017 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 775.1340944881890209 Td
+(misclassification) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 785.336062992126017 240.9448818897637921 -16.5539370078740156 re
+f
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 768.7821259842519339 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 758.5801574803149379 Td
+(src_d64293c4d4) Tj
+T* (479ad8) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 768.7821259842519339 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 758.5801574803149379 Td
+(Relating System Safety and Machine Learnt Model) Tj
+T* (Performance) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 768.7821259842519339 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 758.5801574803149379 Td
+(https://arxiv.org/abs/2507.20135v1) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 744.1781889763778963 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 733.9762204724409003 Td
+(src_faf137945edf) Tj
+T* (f754) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 744.1781889763778963 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 733.9762204724409003 Td
+(A C++17 Thread Pool for High-Performance Scientific) Tj
+T* (Computing) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 744.1781889763778963 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 733.9762204724409003 Td
+(https://arxiv.org/abs/2105.00613v5) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 719.5742519685038587 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 709.3722834645668627 Td
+(src_9edaf659ddc) Tj
+T* (a30c8) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 719.5742519685038587 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 709.3722834645668627 Td
+(Global Thread-Level Inference for Comment) Tj
+T* (Classification in Community Question Answering) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 719.5742519685038587 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 709.3722834645668627 Td
+(https://arxiv.org/abs/1911.08755v1) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 694.9703149606299348 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 684.7683464566928251 Td
+(src_16e9222f420) Tj
+T* (dcaae) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 694.9703149606299348 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 684.7683464566928251 Td
+(ZhianMai/Multi-threading-in-Java - GitHub) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 694.9703149606299348 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 684.7683464566928251 Td
+(https://github.com/ZhianMai/Multi-threading-in-Java) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 670.3663779527558972 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 660.1644094488189012 Td
+(src_37d203f93ef) Tj
+T* (074ec) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 670.3663779527558972 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 660.1644094488189012 Td
+(Multi-threaded server example for synchronization #1381) Tj
+T* (- GitHub) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 670.3663779527558972 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 660.1644094488189012 Td
+(https://github.com/boostorg/beast/issues/1381) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 645.762440944881746 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 635.5604724409448636 Td
+(src_dc976e516a) Tj
+T* (ed4c11) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 645.762440944881746 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 635.5604724409448636 Td
+(Java-Concurrency-in-Practice/Chap 3. Sharing) Tj
+T* (Objects/3.1 Visibility ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 645.762440944881746 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 635.5604724409448636 Td
+(https://github.com/XQQ8765/Java-Concurrency-in-Practice/blob/master/Ch) Tj
+T* (ap%203.%20Sharing%20Objects/3.1%20Visibility.txt) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 621.1585039370078221 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 610.956535433070826 Td
+(src_5ef6a3e3089) Tj
+T* (5e98d) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 621.1585039370078221 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 610.956535433070826 Td
+(GitHub - mratsim/weave: A state-of-the-art multithreading) Tj
+T* (runtime) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 621.1585039370078221 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 610.956535433070826 Td
+(https://github.com/mratsim/weave) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 596.5545669291337845 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 586.3525984251967884 Td
+(src_70b935b5ccf) Tj
+T* (64c94) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 596.5545669291337845 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 586.3525984251967884 Td
+(Java concurrency patterns for educational purposes -) Tj
+T* (GitHub) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 596.5545669291337845 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 586.3525984251967884 Td
+(https://github.com/alxkm/java-concurrency-patterns) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 571.9506299212597469 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 561.7486614173227508 Td
+(src_411e5f843ec) Tj
+T* (34084) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 571.9506299212597469 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 561.7486614173227508 Td
+(Parallel Foreach Thread locking · Issue #13174 - GitHub) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 571.9506299212597469 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 561.7486614173227508 Td
+(https://github.com/PowerShell/PowerShell/issues/13174) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 547.3466929133857093 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 537.1447244094487132 Td
+(src_8e2baa48e4) Tj
+T* (1a6f7e) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 547.3466929133857093 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 537.1447244094487132 Td
+(Shared Memory Multithreading for Dart - GitHub) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 547.3466929133857093 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 537.1447244094487132 Td
+(https://github.com/dart-lang/language/blob/main/working/333%20-%20shar) Tj
+T* (ed%20memory%20multithreading/proposal.md) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 522.7427559055116717 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 512.5407874015747893 Td
+(src_47d5786a27) Tj
+T* (01ff33) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 522.7427559055116717 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 512.5407874015747893 Td
+(Make synchronized block around a cached query) Tj
+T* (optional ... - GitHub) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 522.7427559055116717 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 512.5407874015747893 Td
+(https://github.com/spring-projects/spring-data-jpa/issues/1199) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 498.1388188976377478 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 487.9368503937006949 Td
+(src_8c55929fde1) Tj
+T* (9787d) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 498.1388188976377478 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 487.9368503937006949 Td
+(Comparison of Synchronized and ReentrantLock) Tj
+T* (performance in Java) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 498.1388188976377478 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 487.9368503937006949 Td
+(https://www.reddit.com/r/java/comments/1gmeeny/comparison_of_synchro) Tj
+T* (nized_and_reentrantlock/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 473.5348818897636534 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 463.3329133858267141 Td
+(src_e4f3cff5d29b) Tj
+T* (61e0) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 473.5348818897636534 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 463.3329133858267141 Td
+(java - Locking with synchronized block vs Explicit) Tj
+T* (Locking) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 473.5348818897636534 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 463.3329133858267141 Td
+(https://stackoverflow.com/questions/76724780/locking-with-synchronized-bl) Tj
+T* (ock-vs-explicit-locking) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 448.9309448818896726 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 438.7289763779527334 Td
+(src_672472727f6) Tj
+T* (fe4b1) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 448.9309448818896726 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 438.7289763779527334 Td
+(Java Lock Framework vs Thread Synchronization -) Tj
+T* (GeeksforGeeks) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 448.9309448818896726 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 438.7289763779527334 Td
+(https://www.geeksforgeeks.org/java/lock-framework-vs-thread-synchronizati) Tj
+T* (on-in-java/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 424.3270078740156919 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 414.1250393700787527 Td
+(src_63d03e72be) Tj
+T* (e51857) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 424.3270078740156919 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 414.1250393700787527 Td
+(Difference between synchronised block and lock object) Tj
+T* (in JAVA) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 424.3270078740156919 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 414.1250393700787527 Td
+(https://medium.com/@gaganjain9319/difference-between-synchronised-blo) Tj
+T* (ck-and-lock-object-in-java-262219646b5f) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 399.7230708661417111 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 389.5211023622047719 Td
+(src_7ffa10eb7bf1) Tj
+T* (2a3f) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 399.7230708661417111 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 389.5211023622047719 Td
+(What is Lock in Java | Lock vs synchronized | Avoid) Tj
+T* (Deadlocks) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 399.7230708661417111 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 389.5211023622047719 Td
+(https://www.youtube.com/watch?v=Tsvnsr-G6mU) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 375.1191338582677304 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 364.9171653543307912 Td
+(src_47d8f5ece9a) Tj
+T* (0612a) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 375.1191338582677304 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 364.9171653543307912 Td
+(Pros and Cons of Lock \(java.util.concurrent.locks\) over) Tj
+T* (synchronized ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 375.1191338582677304 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 364.9171653543307912 Td
+(https://www.devinline.com/2015/10/Lock-Vs-synchronized-in-java.html) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 350.5151968503937496 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 340.3132283464567536 Td
+(src_a7e28bfb6a2) Tj
+T* (cfc40) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 350.5151968503937496 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 340.3132283464567536 Td
+(Synchronized vs Lock | Which One Should You Use? -) Tj
+T* (YouTube) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 350.5151968503937496 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 340.3132283464567536 Td
+(https://www.youtube.com/shorts/mBd0rhcFUeE) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 325.9112598425197689 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 315.7092913385828297 Td
+(src_f80924380dc) Tj
+T* (c5a15) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 325.9112598425197689 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 315.7092913385828297 Td
+(In Java, when using locks and synchronize mixed to lock) Tj
+T* (an object ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 325.9112598425197689 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 315.7092913385828297 Td
+(https://www.zhihu.com/en/answer/186507889) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 301.3073228346457881 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 291.1053543307087921 Td
+(src_29a168591b) Tj
+T* (a340ad) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 301.3073228346457881 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 291.1053543307087921 Td
+(When should one use concurrent Java data structures,) Tj
+T* (versus ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 301.3073228346457881 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 291.1053543307087921 Td
+(https://www.quora.com/When-should-one-use-concurrent-Java-data-structu) Tj
+T* (res-versus-explicit-synchronization) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 276.7033858267718074 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 266.5014173228348682 Td
+(src_f696fd9d066) Tj
+T* (a4cd4) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 276.7033858267718074 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 266.5014173228348682 Td
+(Synchronization vs Lock Implemenations - YouTube) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 276.7033858267718074 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 266.5014173228348682 Td
+(https://www.youtube.com/watch?v=i7cnZRVbxkE) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 252.0994488188977982 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 241.8974803149608306 Td
+(src_d00fa602929) Tj
+T* (5824d) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 252.0994488188977982 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 241.8974803149608306 Td
+(java - Synchronization vs Lock - Stack Overflow) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 252.0994488188977982 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 241.8974803149608306 Td
+(https://stackoverflow.com/questions/4201713/synchronization-vs-lock) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 227.4955118110238175 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 217.2935433070869067 Td
+(src_18955c5c70a) Tj
+T* (cdb4b) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 227.4955118110238175 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 217.2935433070869067 Td
+(What are the key differences between synchronized and) Tj
+T* (Lock?) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 227.4955118110238175 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 217.2935433070869067 Td
+(https://medium.com/@a-marian/what-are-the-key-differences-between-sync) Tj
+T* (hronized-and-lock-6038dccf1802) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 202.8915748031498367 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 192.6896062992128691 Td
+(src_7f6c40f0690) Tj
+T* (12f5b) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 202.8915748031498367 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 192.6896062992128691 Td
+(Ø>Ýà   W h a t ’ s   t h e   D i f f e r e n c e   B e t w e e n   S y n c h r o n i z e d   M e t h o d) Tj
+T* (and Synchronized Block in Java?) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 202.8915748031498367 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 192.6896062992128691 Td
+(https://medium.com/@idiotN/whats-the-difference-between-synchronized-m) Tj
+T* (ethod-and-synchronized-block-in-java-ab8dfb8c3bd9) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 178.287637795275856 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 168.0856692913389452 Td
+(src_5e3d3ed49e) Tj
+T* (dafe32) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 178.287637795275856 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 168.0856692913389452 Td
+(Synchronized Blocks and Synchronized Methods in Java) Tj
+T* (- Medium) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 178.287637795275856 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 168.0856692913389452 Td
+(https://medium.com/@vino7tech/synchronized-blocks-and-synchronized-m) Tj
+T* (ethods-in-java-2488cb302185) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 153.6837007874018468 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 143.4817322834649076 Td
+(src_b9e218c7f2b) Tj
+T* (8eca5) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 153.6837007874018468 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 143.4817322834649076 Td
+(Reading 22: Locks and Synchronization - MIT) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 153.6837007874018468 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 143.4817322834649076 Td
+(https://web.mit.edu/6.031/www/sp20/classes/22-locks/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 129.0797637795278661 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 118.87779527559087 Td
+(src_edfb5805367) Tj
+T* (dae46) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 129.0797637795278661 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 118.87779527559087 Td
+(Synchronized vs Lock performance) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 129.0797637795278661 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 118.87779527559087 Td
+(http://blog.vanillajava.blog/2011/07/synchronized-vs-lock-performance.html) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 104.4758267716538143 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 94.2738582677167187 Td
+(src_b21cf009c47) Tj
+T* (4818b) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 104.4758267716538143 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 94.2738582677167187 Td
+(Java Performance: synchronized\(\) vs Lock | by) Tj
+T* (LiveRamp - Medium) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 104.4758267716538143 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 94.2738582677167187 Td
+(https://medium.com/liveramp-engineering/java-performance-synchronized-v) Tj
+T* (s-lock-301130e62f47) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 79.8718897637798193 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 69.6699212598427948 Td
+(src_c640df0890f) Tj
+T* (3e018) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 79.8718897637798193 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 69.6699212598427948 Td
+(Performance comparison between synchronized and) Tj
+T* (ReentrantLock in Java) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 79.8718897637798193 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 69.6699212598427948 Td
+(https://medium.com/@umeshcapg/performance-comparison-between-sync) Tj
+T* (hronized-and-reentrantlock-in-java-2d1148d5f825) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+endstream
+endobj
+17 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 18 0 R
+>>
+endobj
+18 0 obj
+<<
+/Length 24944
+>>
+stream
+0. w
+0.78 G
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 801.8899999999999864 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+43.9370078740157552 791.6880314960629903 Td
+(Source id) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+102.0472440944882067 801.8899999999999864 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+106.2992125984252141 791.6880314960629903 Td
+(Title) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+286.2992125984252425 801.8899999999999864 240.9448818897637921 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+290.5511811023622499 791.6880314960629903 Td
+(URL) Tj
+ET
+0. G
+0.5670000000000001 w
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 785.336062992126017 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 775.1340944881890209 Td
+(src_c9ee668191) Tj
+T* (43d80c) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 785.336062992126017 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 775.1340944881890209 Td
+(ReentrantLock vs. synchronized in Java - Naveen Metta) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 785.336062992126017 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 775.1340944881890209 Td
+(https://naveen-metta.medium.com/reentrantlock-vs-synchronized-in-java-a-) Tj
+T* (comprehensive-comparison-26cf05819cf2) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 760.7321259842519794 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 750.5301574803149833 Td
+(src_552bc2e876) Tj
+T* (a90a44) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 760.7321259842519794 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 750.5301574803149833 Td
+(How the Java “synchronized” Keyword Can Slow Down) Tj
+T* (Your ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 760.7321259842519794 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 750.5301574803149833 Td
+(https://medium.com/@niteshthakur498/how-the-java-synchronized-keyword) Tj
+T* (-can-slow-down-your-application-if-not-used-carefully-dc586f86cb30) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 736.1281889763779418 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 725.9262204724409457 Td
+(src_2f1cb91e409) Tj
+T* (59739) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 736.1281889763779418 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 725.9262204724409457 Td
+(Synchronized method + Synchronized block VS) Tj
+T* (Performance) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 736.1281889763779418 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 725.9262204724409457 Td
+(https://coderanch.com/t/521747/java/Synchronized-method-Synchronized-b) Tj
+T* (lock-Performance) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 711.5242519685039042 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 701.3222834645669082 Td
+(src_7d38b00dc0) Tj
+T* (426c9a) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 711.5242519685039042 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 701.3222834645669082 Td
+(Synchronized But Still Broken: Concurrency Pitfalls) Tj
+T* (Every Java ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 711.5242519685039042 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 701.3222834645669082 Td
+(https://codefarm0.medium.com/synchronized-but-still-broken-concurrency-p) Tj
+T* (itfalls-every-java-engineer-should-know-cb17fe586fa0) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 686.9203149606298666 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 676.7183464566928706 Td
+(src_b1dea95291f) Tj
+T* (864f7) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 686.9203149606298666 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 676.7183464566928706 Td
+(Reading 23: Locks and Synchronization - MIT) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 686.9203149606298666 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 676.7183464566928706 Td
+(https://web.mit.edu/6.005/www/fa15/classes/23-locks/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 662.316377952755829 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 652.114409448818833 Td
+(src_c25693e71dc) Tj
+T* (3d3f0) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 662.316377952755829 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 652.114409448818833 Td
+(Is there any alternative for synchronization? -) Tj
+T* (CodeRanch) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 662.316377952755829 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 652.114409448818833 Td
+(https://coderanch.com/t/449746/java/alternative-synchronization) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 637.7124409448819051 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 627.5104724409447954 Td
+(src_97b916ccbc5) Tj
+T* (31415) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 637.7124409448819051 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 627.5104724409447954 Td
+(Master Java's Lock Interface: Alternative to synchronized) Tj
+T* (blocks) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 637.7124409448819051 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 627.5104724409447954 Td
+(https://medium.com/@ujjawalr/java-lock-interface-b2f0a4027dba) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 613.1085039370078675 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 602.9065354330708715 Td
+(src_3de4bf9e72e) Tj
+T* (459d5) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 613.1085039370078675 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 602.9065354330708715 Td
+(Alternative for synchronized block in java - Stack) Tj
+T* (Overflow) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 613.1085039370078675 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 602.9065354330708715 Td
+(https://stackoverflow.com/questions/11649473/alternative-for-synchronized-) Tj
+T* (block-in-java) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 588.5045669291337163 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 578.3025984251967202 Td
+(src_124033a922f) Tj
+T* (e0712) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 588.5045669291337163 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 578.3025984251967202 Td
+(ReentrantLock vs Synchronized Which is BEST in Java -) Tj
+T* (YouTube) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 588.5045669291337163 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 578.3025984251967202 Td
+(https://www.youtube.com/watch?v=wTMHRf-qdPM) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 563.9006299212597924 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 553.6986614173227963 Td
+(src_a1ebe02206) Tj
+T* (544047) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 563.9006299212597924 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 553.6986614173227963 Td
+(Let's Replace the synchronized Keyword - Foojay.io) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 563.9006299212597924 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 553.6986614173227963 Td
+(https://foojay.io/today/lets-replace-the-synchronized-keyword/) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 539.2966929133857548 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 529.0947244094487587 Td
+(src_132924c356) Tj
+T* (4f1e69) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 539.2966929133857548 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 529.0947244094487587 Td
+(Java Synchronization Mechanisms — A Practical and) Tj
+T* (Conceptual ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 539.2966929133857548 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 529.0947244094487587 Td
+(https://medium.com/@tejaswi555ponnamanda/java-synchronization-mecha) Tj
+T* (nisms-a-practical-and-conceptual-guide-0749868b3a47) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 514.6927559055117172 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 504.4907874015747211 Td
+(src_dbd243608e) Tj
+T* (413e9b) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 514.6927559055117172 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 504.4907874015747211 Td
+(Difference Between synchronized and ReentrantLock in) Tj
+T* (Java. Java ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 514.6927559055117172 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 504.4907874015747211 Td
+(https://medium.com/@alxkm/difference-between-synchronized-and-reentra) Tj
+T* (ntlock-in-java-09402b06c47f) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 490.0888188976376796 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 479.8868503937006835 Td
+(src_7e6a4ae65c) Tj
+T* (1c5475) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 490.0888188976376796 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 479.8868503937006835 Td
+(Why use a ReentrantLock if one can use) Tj
+T* (synchronized\(this\)?) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 490.0888188976376796 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 479.8868503937006835 Td
+(https://codemia.io/knowledge-hub/path/why_use_a_reentrantlock_if_one_c) Tj
+T* (an_use_synchronizedthis) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 465.4848818897636988 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 455.2829133858266459 Td
+(src_74c122176f0) Tj
+T* (37986) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 465.4848818897636988 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 455.2829133858266459 Td
+(Unlocking the Mysteries of Java Concurrent) Tj
+T* (Programming | PixelsTech) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 465.4848818897636988 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 455.2829133858266459 Td
+(https://www.pixelstech.net/article/1684758352-deep-understanding-of-reent) Tj
+T* (rantlock%3A-unlocking-the-mysteries-of-java-concurrent-programming) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 440.8809448818897181 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 430.6789763779526652 Td
+(src_31dcac1f219) Tj
+T* (518c2) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 440.8809448818897181 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 430.6789763779526652 Td
+(java - Why use a ReentrantLock if one can use) Tj
+T* (synchronized\(this\)?) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 440.8809448818897181 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 430.6789763779526652 Td
+(https://stackoverflow.com/questions/11821801/why-use-a-reentrantlock-if-o) Tj
+T* (ne-can-use-synchronizedthis) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 416.2770078740156805 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 406.0750393700786844 Td
+(src_7130570ced) Tj
+T* (dc3b36) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 416.2770078740156805 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 406.0750393700786844 Td
+(Locking Mechanism in Java - Medium) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 416.2770078740156805 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 406.0750393700786844 Td
+(https://medium.com/@premchandu.in/locking-mechanism-in-java-3eaf0d28) Tj
+T* (066c) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 391.6730708661416998 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 381.4711023622047037 Td
+(src_b89ffcf67310) Tj
+T* (0912) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 391.6730708661416998 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 381.4711023622047037 Td
+(Reentrant Locks | Concurrency Interview - AlgoMaster.io) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 391.6730708661416998 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 381.4711023622047037 Td
+(https://algomaster.io/learn/concurrency-interview/reentrant-locks) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 367.069133858267719 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 356.8671653543307229 Td
+(src_131ea93a75) Tj
+T* (ea15cd) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 367.069133858267719 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 356.8671653543307229 Td
+(Synchronized vs. Lock API ReentrantLock Java ... -) Tj
+T* (YouTube) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 367.069133858267719 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 356.8671653543307229 Td
+(https://www.youtube.com/watch?v=hMjI-YiVAvE) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 342.4651968503937383 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 332.2632283464567422 Td
+(src_bb64fdef97a) Tj
+T* (4461e) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 342.4651968503937383 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 332.2632283464567422 Td
+(Java's Multithreading Superpower: Mastering Reentrant) Tj
+T* (Locks |) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 342.4651968503937383 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 332.2632283464567422 Td
+(https://medium.com/@deepu144/javas-multithreading-superpower-masterin) Tj
+T* (g-reentrant-locks-d5f30e792b26) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 317.8612598425197575 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 307.6592913385827615 Td
+(src_7f3277de8aa) Tj
+T* (b8366) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 317.8612598425197575 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 307.6592913385827615 Td
+(Why You Should Ditch Synchronized for ReentrantLock) Tj
+T* (in Java) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 317.8612598425197575 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 307.6592913385827615 Td
+(https://www.linkedin.com/posts/vinicius-hc-castro_java-concurrency-multithr) Tj
+T* (eading-activity-7381072458042404864-4gpJ) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 293.2573228346457768 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 283.0553543307087239 Td
+(src_002248c8e2) Tj
+T* (7de13f) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 293.2573228346457768 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 283.0553543307087239 Td
+(What is Reentrant lock in Java multithreading and how it) Tj
+T* (works?) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 293.2573228346457768 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 283.0553543307087239 Td
+(https://www.quora.com/What-is-Reentrant-lock-in-Java-multithreading-and-) Tj
+T* (how-it-works) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 268.653385826771796 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 258.4514173228348 Td
+(src_4948fce5585) Tj
+T* (ab120) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 268.653385826771796 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 258.4514173228348 Td
+(ReentrantLock in Java - GeeksforGeeks) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 268.653385826771796 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 258.4514173228348 Td
+(https://www.geeksforgeeks.org/java/reentrant-lock-in-java/) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 244.0494488188978153 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 233.8474803149607624 Td
+(src_3578259fbf9) Tj
+T* (d68ca) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 244.0494488188978153 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 233.8474803149607624 Td
+(Java Locks Explained: When to Use Synchronized,) Tj
+T* (ReentrantLock ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 244.0494488188978153 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 233.8474803149607624 Td
+(https://medium.com/@priyaranjanpatraa/java-locks-explained-when-to-use-) Tj
+T* (synchronized-reentrantlock-and-readwritelock-d0bf83c14370) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 219.4455118110238345 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 209.2435433070868385 Td
+(src_7edd9308f0e) Tj
+T* (7a3d8) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 219.4455118110238345 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 209.2435433070868385 Td
+(ReentrantLock \(Java Platform SE 8 \) - Oracle Help) Tj
+T* (Center) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 219.4455118110238345 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 209.2435433070868385 Td
+(https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/Reentra) Tj
+T* (ntLock.html) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 194.8415748031498538 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 184.6396062992128009 Td
+(src_85f77976864) Tj
+T* (f1d4f) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 194.8415748031498538 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 184.6396062992128009 Td
+(embeddedmonologue - mutual exclusion and) Tj
+T* (synchronization) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 194.8415748031498538 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 184.6396062992128009 Td
+(https://sites.google.com/site/embeddedmonologue/home/mutual-exclusion-) Tj
+T* (and-synchronization) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 170.237637795275873 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 160.035669291338877 Td
+(src_2273c72bda) Tj
+T* (e2fa66) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 170.237637795275873 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 160.035669291338877 Td
+(Java Synchronization \(Mutual Exclusion\) Benchmark) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 170.237637795275873 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 160.035669291338877 Td
+(https://baptiste-wicht.com/posts/2010/09/java-synchronization-mutual-exclu) Tj
+T* (sion-benchmark.html) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 145.6337007874018639 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 135.4317322834648394 Td
+(src_087e8ed8bef) Tj
+T* (1468f) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 145.6337007874018639 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 135.4317322834648394 Td
+(Mutual Exclusion) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 145.6337007874018639 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 135.4317322834648394 Td
+(https://cs.lmu.edu/~ray/notes/mutualexclusion/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 121.0297637795278973 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 110.8277952755908018 Td
+(src_9fd76c9333c) Tj
+T* (b41cd) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 121.0297637795278973 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 110.8277952755908018 Td
+(Why synchronized Is the Least Interesting Thing About) Tj
+T* (Java ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 121.0297637795278973 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 110.8277952755908018 Td
+(https://medium.com/javarevisited/why-synchronized-is-the-least-interesting-) Tj
+T* (thing-about-java-concurrency-ca8f0252e534) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 96.4258267716539024 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 86.2238582677168779 Td
+(src_b46de0325c) Tj
+T* (9c48d4) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 96.4258267716539024 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 86.2238582677168779 Td
+(Mutual Exclusion \(Mutex\)) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 96.4258267716539024 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 86.2238582677168779 Td
+(https://stevengong.co/notes/Mutual-Exclusion) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 71.8218897637799216 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 61.6199212598428403 Td
+(src_2018af3ee5c) Tj
+T* (3ddcd) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 71.8218897637799216 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 61.6199212598428403 Td
+(java - Mutual exclusion - How synchronized works? -) Tj
+T* (Stack Overflow) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 71.8218897637799216 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 61.6199212598428403 Td
+(https://stackoverflow.com/questions/47851595/mutual-exclusion-how-synch) Tj
+T* (ronized-works) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+endstream
+endobj
+19 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 20 0 R
+>>
+endobj
+20 0 obj
+<<
+/Length 25568
+>>
+stream
+0. w
+0.78 G
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 801.8899999999999864 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+43.9370078740157552 791.6880314960629903 Td
+(Source id) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+102.0472440944882067 801.8899999999999864 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+106.2992125984252141 791.6880314960629903 Td
+(Title) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+286.2992125984252425 801.8899999999999864 240.9448818897637921 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+290.5511811023622499 791.6880314960629903 Td
+(URL) Tj
+ET
+0. G
+0.5670000000000001 w
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 785.336062992126017 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 775.1340944881890209 Td
+(src_40c7007a36) Tj
+T* (456896) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 785.336062992126017 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 775.1340944881890209 Td
+(Synchronizing Threads like a Pro: Dive into Mutual) Tj
+T* (Exclusion and ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 785.336062992126017 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 775.1340944881890209 Td
+(https://medium.com/@amitvsolutions/synchronizing-threads-like-a-pro-dive-) Tj
+T* (into-mutual-exclusion-and-cooperation-f9a89c802d09) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 760.7321259842519794 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 750.5301574803149833 Td
+(src_dd392efea07) Tj
+T* (f76aa) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 760.7321259842519794 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 750.5301574803149833 Td
+([PDF] critical sections, mutual exclusion, test-and-set,) Tj
+T* (spinlocks, blocking ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 760.7321259842519794 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 750.5301574803149833 Td
+(https://student.cs.uwaterloo.ca/~cs350/S19/notes/synchronization-1up.pdf) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 736.1281889763779418 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 725.9262204724409457 Td
+(src_f4296e78b7e) Tj
+T* (24c91) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 736.1281889763779418 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 725.9262204724409457 Td
+(CPU Scheduling, Mutual Exclusion & More - Ep 38 -) Tj
+T* (YouTube) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 736.1281889763779418 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 725.9262204724409457 Td
+(https://www.youtube.com/watch?v=mTzqVinpU1E) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 711.5242519685039042 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 701.3222834645669082 Td
+(src_d4f6d727a93) Tj
+T* (6351a) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 711.5242519685039042 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 701.3222834645669082 Td
+(Is not this code violating mutual exclusion in critical) Tj
+T* (section?) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 711.5242519685039042 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 701.3222834645669082 Td
+(https://stackoverflow.com/questions/27840116/is-not-this-code-violating-mu) Tj
+T* (tual-exclusion-in-critical-section) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 686.9203149606298666 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 676.7183464566928706 Td
+(src_2769bca69a) Tj
+T* (673ca4) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 686.9203149606298666 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 676.7183464566928706 Td
+(Java concurrency — fixing races with AtomicReference -) Tj
+T* (OpenLiberty.io) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 686.9203149606298666 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 676.7183464566928706 Td
+(https://openliberty.io/blog/2021/09/21/building-on-atomic-reference.html) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 662.316377952755829 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 652.114409448818833 Td
+(src_f6441b13825) Tj
+T* (e2c84) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 662.316377952755829 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 652.114409448818833 Td
+(Why do we need to compareAndSet when set is already) Tj
+T* (atomic in ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 662.316377952755829 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 652.114409448818833 Td
+(https://stackoverflow.com/questions/37716360/why-do-we-need-to-compar) Tj
+T* (eandset-when-set-is-already-atomic-in-java) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 637.7124409448819051 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 627.5104724409447954 Td
+(src_7652a1dbfa2) Tj
+T* (12dea) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 637.7124409448819051 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 627.5104724409447954 Td
+(What are AtomicInteger and AtomicLong in Java? How it) Tj
+T* (works? compareAndSet\(\) Example Tutorial) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 637.7124409448819051 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 627.5104724409447954 Td
+(https://javarevisited.blogspot.com/2023/09/what-is-atomicinteger-and-atomi) Tj
+T* (clong-in.html) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 613.1085039370078675 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 602.9065354330708715 Td
+(src_28270f7aa71) Tj
+T* (cfc08) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 613.1085039370078675 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 602.9065354330708715 Td
+(Mastering Atomic Variables — AtomicInteger,) Tj
+T* (AtomicLong, and ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 613.1085039370078675 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 602.9065354330708715 Td
+(https://medium.com/@umeshcapg/java-concurrency-programming-intervie) Tj
+T* (w-mastering-atomic-variables-atomicinteger-atomiclong-7ed38834d4ce) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 588.5045669291337163 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 578.3025984251967202 Td
+(src_97918ec6a2f) Tj
+T* (aa23c) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 588.5045669291337163 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 578.3025984251967202 Td
+(How and when should we use `AtomicReference` in) Tj
+T* (Java? - Ask a Question - TestMu AI Community) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 588.5045669291337163 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 578.3025984251967202 Td
+(https://community.lambdatest.com/t/how-and-when-should-we-use-atomicre) Tj
+T* (ference-in-java/36508) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 563.9006299212597924 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 553.6986614173227963 Td
+(src_e392c59762f) Tj
+T* (c74d9) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 563.9006299212597924 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 553.6986614173227963 Td
+(Lock-Free Programming with Atomic Variables |) Tj
+T* (CodeSignal Learn) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 563.9006299212597924 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 553.6986614173227963 Td
+(https://codesignal.com/learn/courses/java-concurrency-foundations/lessons) Tj
+T* (/lock-free-programming-with-atomic-variables) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 539.2966929133857548 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 529.0947244094487587 Td
+(src_ce65d0b602) Tj
+T* (0aa159) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 539.2966929133857548 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 529.0947244094487587 Td
+(When to use AtomicReference \(Java\)? Is it really) Tj
+T* (necessary?) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 539.2966929133857548 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 529.0947244094487587 Td
+(https://stackoverflow.com/questions/2932505/when-to-use-atomicreference) Tj
+T* (-java-is-it-really-necessary) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 514.6927559055117172 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 504.4907874015747211 Td
+(src_f84992dea53) Tj
+T* (f7dc7) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 514.6927559055117172 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 504.4907874015747211 Td
+(How to use AtomicInteger in Java for thread-safe) Tj
+T* (updates - LinkedIn) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 514.6927559055117172 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 504.4907874015747211 Td
+(https://www.linkedin.com/posts/meheedihasaan_java-concurrency-multithre) Tj
+T* (ading-activity-7357124321326108672-8hMW) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 490.0888188976376796 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 479.8868503937006835 Td
+(src_b192aaeabc) Tj
+T* (9af54d) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 490.0888188976376796 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 479.8868503937006835 Td
+(How to use Atomic classes for safe thread operations in) Tj
+T* (Java) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 490.0888188976376796 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 479.8868503937006835 Td
+(https://www.linkedin.com/posts/avinashkr91_java-concurrency-multithreadi) Tj
+T* (ng-activity-7388473615035486208-52OC) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 465.4848818897636988 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 455.2829133858266459 Td
+(src_336849134e) Tj
+T* (7cddc2) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 465.4848818897636988 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 455.2829133858266459 Td
+(Thread Safety in Kotlin: Demystifying Synchronization,) Tj
+T* (Volatile, and ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 465.4848818897636988 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 455.2829133858266459 Td
+(https://proandroiddev.com/thread-safety-in-kotlin-demystifying-synchronizati) Tj
+T* (on-volatile-and-atomicreference-in-android-3f7cfab78404) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 440.8809448818897181 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 430.6789763779526652 Td
+(src_6498120ca7) Tj
+T* (234d4c) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 440.8809448818897181 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 430.6789763779526652 Td
+(How Java's Atomic Variables Work Without Locks -) Tj
+T* (Medium) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 440.8809448818897181 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 430.6789763779526652 Td
+(https://medium.com/@AlexanderObregon/the-mechanics-behind-how-javas) Tj
+T* (-atomic-variables-guarantee-thread-safety-without-locks-719cad1ab9dd) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 416.2770078740156805 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 406.0750393700786844 Td
+(src_4a54a577ff2) Tj
+T* (897ca) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 416.2770078740156805 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 406.0750393700786844 Td
+(An Introduction to Atomic Variables in Java - Baeldung) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 416.2770078740156805 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 406.0750393700786844 Td
+(https://www.baeldung.com/java-atomic-variables) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 391.6730708661416998 62.3622047244094517 -32.6539370078740134 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 381.4711023622047037 Td
+(src_0ba7b71a1e) Tj
+T* (9d9277) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 391.6730708661416998 184.2519685039370358 -32.6539370078740134 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 381.4711023622047037 Td
+(This article delves into the trade-offs of using) Tj
+T* (#synchronized ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 391.6730708661416998 240.9448818897637921 -32.6539370078740134 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 381.4711023622047037 Td
+(https://www.facebook.com/61555399162262/posts/this-article-delves-into-t) Tj
+T* (he-trade-offs-of-using-synchronized-methods-and-synchr/12220678174417) Tj
+T* (9972/) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 359.0191338582676508 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 348.8171653543306547 Td
+(src_a6c5fc46d51) Tj
+T* (31c28) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 359.0191338582676508 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 348.8171653543306547 Td
+(Changelog - The Linux Kernel Archives) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 359.0191338582676508 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 348.8171653543306547 Td
+(https://cdn.kernel.org/pub/linux/kernel/v7.x/ChangeLog-7.0) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 334.41519685039367 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 324.2132283464566171 Td
+(src_fe917a8f5ee) Tj
+T* (3cf19) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 334.41519685039367 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 324.2132283464566171 Td
+(https://www.microsoft.com/releasecommunications/ap...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 334.41519685039367 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 324.2132283464566171 Td
+(https://www.microsoft.com/releasecommunications/api/v2/m365?responseF) Tj
+T* (ormat=csv) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 309.8112598425196893 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 299.6092913385826932 Td
+(src_73871fd9d64) Tj
+T* (97af9) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 309.8112598425196893 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 299.6092913385826932 Td
+([PDF] The American Ceramic Society Spring Meeting) Tj
+T* (2026 ABSTRACT ...) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 309.8112598425196893 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 299.6092913385826932 Td
+(https://ceramics.org/wp-content/uploads/2026/03/3.23.SPRING26_Abstract) Tj
+T* (s-3-002.pdf) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 285.2073228346457086 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 275.0053543307086557 Td
+(src_aecd1d7b7f3) Tj
+T* (59978) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 285.2073228346457086 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 275.0053543307086557 Td
+(High-frequency applications of high-temperature) Tj
+T* (superconductor thin films - IOPscience) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 285.2073228346457086 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 275.0053543307086557 Td
+(https://iopscience.iop.org/0034-4885/65/10/201/pdf/0034-4885_65_10_201.) Tj
+T* (pdf) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 260.6033858267717278 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 250.4014173228347317 Td
+(src_c4d1c5dbe01) Tj
+T* (d4561) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 260.6033858267717278 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 250.4014173228347317 Td
+(Java Performance: synchronized\(\) vs Lock - Reddit) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 260.6033858267717278 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 250.4014173228347317 Td
+(https://www.reddit.com/r/java/comments/i1vby/java_performance_synchroni) Tj
+T* (zed_vs_lock/) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 235.9994488188977471 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 225.7974803149606942 Td
+(src_d1af9447c6a) Tj
+T* (833be) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 235.9994488188977471 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 225.7974803149606942 Td
+(java - is reentrant lock is complete replacement for) Tj
+T* (synchronisation?) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 235.9994488188977471 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 225.7974803149606942 Td
+(https://stackoverflow.com/questions/39961031/is-reentrant-lock-is-complete) Tj
+T* (-replacement-for-synchronisation) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 211.3955118110237663 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 201.1935433070867703 Td
+(src_23ad023895) Tj
+T* (88f278) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 211.3955118110237663 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 201.1935433070867703 Td
+(Understand Synchronizers in Java Concurrency Library) Tj
+T* (In Depth[2]) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 211.3955118110237663 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 201.1935433070867703 Td
+(https://anytech.medium.com/reentrantunderstand-synchronizers-in-java-con) Tj
+T* (currency-library-in-depth-2-reentrantreadwritelock-04375aa9c091) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 186.7915748031497856 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 176.5896062992127327 Td
+(src_e9cf77bc8f2) Tj
+T* (e1b08) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 186.7915748031497856 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 176.5896062992127327 Td
+(How the Humble Synchronized beats ReentrantLock..) Tj
+T* (Simplified for a long suffering Java Programmer) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 186.7915748031497856 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 176.5896062992127327 Td
+(https://medium.com/@apusingh1967/how-synchronized-beats-reentrantlock) Tj
+T* (-simplified-for-a-long-suffering-java-programmer-c83d069a6fc0) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 162.1876377952758048 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 151.9856692913388088 Td
+(src_b0c8b52b05) Tj
+T* (89abac) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 162.1876377952758048 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 151.9856692913388088 Td
+(Why is ReentrantLock recommended over Synchronized) Tj
+T* ( f o r   . . .   -  wåNN) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 162.1876377952758048 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 151.9856692913388088 Td
+(https://www.zhihu.com/en/answer/3417731035) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 137.5837007874018241 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 127.3817322834647712 Td
+(src_6db2822a8d) Tj
+T* (ddc339) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 137.5837007874018241 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 127.3817322834647712 Td
+(Using ReentrantLock instead of synchronized for) Tj
+T* (improving ...) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 137.5837007874018241 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 127.3817322834647712 Td
+(https://stackoverflow.com/questions/33689850/using-reentrantlock-instead-) Tj
+T* (of-synchronized-for-improving-performance) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 112.9797637795278291 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 102.7777952755907336 Td
+(src_ea34e5119c) Tj
+T* (d65f08) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 112.9797637795278291 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 102.7777952755907336 Td
+(java.util.concurrent.locks.ReentrantLock generates a lot) Tj
+T* (of garbage) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 112.9797637795278291 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 102.7777952755907336 Td
+(https://bugs.openjdk.org/browse/JDK-6911759) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 88.3758267716538484 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 78.1738582677168097 Td
+(src_c4d8511284) Tj
+T* (e57e4d) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 88.3758267716538484 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 78.1738582677168097 Td
+(Deadlocks and Lock Mechanisms | CodeSignal Learn) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 88.3758267716538484 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 78.1738582677168097 Td
+(https://codesignal.com/learn/courses/java-concurrency-foundations/lessons) Tj
+T* (/deadlocks-and-lock-mechanisms) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 63.7718897637798605 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 53.5699212598427721 Td
+(src_bc2a35136b) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 63.7718897637798605 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 53.5699212598427721 Td
+(Java Synchronized vs ReentrantLock - AnyTech -) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 63.7718897637798605 240.9448818897637921 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 53.5699212598427721 Td
+(https://anytech.medium.com/java-synchronized-vs-reentrantlock-which-lock) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+endstream
+endobj
+21 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 22 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 7986
+>>
+stream
+0. w
+0.78 G
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 801.8899999999999864 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+43.9370078740157552 791.6880314960629903 Td
+(Source id) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+102.0472440944882067 801.8899999999999864 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+106.2992125984252141 791.6880314960629903 Td
+(Title) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+286.2992125984252425 801.8899999999999864 240.9448818897637921 -16.5539370078740156 re
+f
+BT
+/F2 7 Tf
+8.0499999999999989 TL
+1. g
+290.5511811023622499 791.6880314960629903 Td
+(URL) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 785.336062992126017 62.3622047244094517 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 775.1340944881890209 Td
+(d3f248) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+102.0472440944882067 785.336062992126017 184.2519685039370358 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 775.1340944881890209 Td
+(Medium) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+286.2992125984252425 785.336062992126017 240.9448818897637921 -16.5539370078740156 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 775.1340944881890209 Td
+(-should-i-use-really-0cd8bd7cd3e5) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+39.6850393700787407 768.7821259842519339 62.3622047244094517 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+43.9370078740157552 758.5801574803149379 Td
+(src_94e72723b4f) Tj
+T* (1ff2e) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+102.0472440944882067 768.7821259842519339 184.2519685039370358 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+106.2992125984252141 758.5801574803149379 Td
+(Java Concurrency Unlocked: A Comparative Guide to ...) Tj
+T* (- Unlogged) Tj
+ET
+1. g
+0.78 G
+0. w
+1. g
+286.2992125984252425 768.7821259842519339 240.9448818897637921 -24.6039370078740163 re
+f
+BT
+/F1 7 Tf
+8.0499999999999989 TL
+0.314 g
+290.5511811023622499 758.5801574803149379 Td
+(https://www.unlogged.io/post/java-concurrency-unlocked-a-comparative-gui) Tj
+T* (de-to-synchronization-tools) Tj
+ET
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0. g
+39.6850393700787407 721.5010236220472279 Td
+(Trust score — methodology & session summary) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.157 g
+39.6850393700787407 704.4931496062991982 Td
+(Each verified claim receives a headline trust score from 0 \(low\) to 100 \(high\). In the agent pipeline, evidence for synthesis is labeled HIGH,) Tj
+T* ( M O D E R A T E ,   o r   L O W   f r o m   t h a t   s c o r e :   H I G H   w h e n   s c o r e  "e   8 1 ,   M O D E R A T E   w h e n   5 1 – 8 0 ,   L O W   w h e n   0 – 5 0 .) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.157 g
+39.6850393700787407 673.8789763779527675 Td
+(The headline score is a weighted blend of five dimensions \(see per-claim table below when available\): source_count \(weight 15%\) — more cited) Tj
+T* (sources increase the score up to a cap; source_authority \(25%\) — higher for strong domains \(.gov, .mil, .edu, Wikipedia, academic and major) Tj
+T* (hubs\); source_agreement \(15%\) — neutral placeholder until an entailment model is added; recency \(15%\) — newer publication dates score) Tj
+T* (higher; fact_checker \(30%\) — score from the verification pass on claim–source alignment. If a claim has no sources, the module uses a reduced,) Tj
+T* (fact-checker-heavy formula with a low cap.) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 608.6821259842520249 Td
+(This session: 1 verified claim\(s\). Mean headline score: 62.0/100. Bands: HIGH 0, MODERATE 1, LOW 0.) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+39.6850393700787407 582.0364566929133616 Td
+(Per-claim score components \(0–100 each, before weighting\)) Tj
+ET
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+39.6850393700787407 570.6978740157479706 45.354330708661422 -14.2781496062992108 re
+f
+BT
+/F2 6.5 Tf
+7.4749999999999996 TL
+1. g
+43.0866141732283481 561.7712992125983646 Td
+(Band) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+85.0393700787401627 570.6978740157479706 39.6850393700787407 -14.2781496062992108 re
+f
+BT
+/F2 6.5 Tf
+7.4749999999999996 TL
+1. g
+88.4409448818897772 561.7712992125983646 Td
+(Headline) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+124.7244094488189035 570.6978740157479706 39.6850393700787407 -14.2781496062992108 re
+f
+BT
+/F2 6.5 Tf
+7.4749999999999996 TL
+1. g
+128.1259842519685321 561.7712992125983646 Td
+(src_cnt) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+164.4094488188976584 570.6978740157479706 45.354330708661422 -14.2781496062992108 re
+f
+BT
+/F2 6.5 Tf
+7.4749999999999996 TL
+1. g
+167.8110236220472586 561.7712992125983646 Td
+(authority) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+209.7637795275590804 570.6978740157479706 39.6850393700787407 -14.2781496062992108 re
+f
+BT
+/F2 6.5 Tf
+7.4749999999999996 TL
+1. g
+213.1653543307086807 561.7712992125983646 Td
+(agree) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+249.4488188976378069 570.6978740157479706 39.6850393700787407 -14.2781496062992108 re
+f
+BT
+/F2 6.5 Tf
+7.4749999999999996 TL
+1. g
+252.8503937007874356 561.7712992125983646 Td
+(recency) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+289.1338582677165618 570.6978740157479706 39.6850393700787407 -14.2781496062992108 re
+f
+BT
+/F2 6.5 Tf
+7.4749999999999996 TL
+1. g
+292.5354330708661905 561.7712992125983646 Td
+(fact_chk) Tj
+ET
+0.16 0.5 0.73 rg
+0.78 G
+0. w
+0.16 0.5 0.73 rg
+328.8188976377953168 570.6978740157479706 226.7760629921258726 -14.2781496062992108 re
+f
+BT
+/F2 6.5 Tf
+7.4749999999999996 TL
+1. g
+332.2204724409449454 561.7712992125983646 Td
+(Claim \(excerpt\)) Tj
+ET
+0. G
+0.5670000000000001 w
+0.96 g
+0.78 G
+0. w
+0.96 g
+39.6850393700787407 556.4197244094486905 45.354330708661422 -29.2281496062992083 re
+f
+BT
+/F1 6.5 Tf
+7.4749999999999996 TL
+0.314 g
+43.0866141732283481 547.4931496062990846 Td
+(MODERATE) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+85.0393700787401627 556.4197244094486905 39.6850393700787407 -29.2281496062992083 re
+f
+BT
+/F1 6.5 Tf
+7.4749999999999996 TL
+0.314 g
+88.4409448818897772 547.4931496062990846 Td
+(62) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+124.7244094488189035 556.4197244094486905 39.6850393700787407 -29.2281496062992083 re
+f
+BT
+/F1 6.5 Tf
+7.4749999999999996 TL
+0.314 g
+128.1259842519685321 547.4931496062990846 Td
+(35) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+164.4094488188976584 556.4197244094486905 45.354330708661422 -29.2281496062992083 re
+f
+BT
+/F1 6.5 Tf
+7.4749999999999996 TL
+0.314 g
+167.8110236220472586 547.4931496062990846 Td
+(88) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+209.7637795275590804 556.4197244094486905 39.6850393700787407 -29.2281496062992083 re
+f
+BT
+/F1 6.5 Tf
+7.4749999999999996 TL
+0.314 g
+213.1653543307086807 547.4931496062990846 Td
+(70) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+249.4488188976378069 556.4197244094486905 39.6850393700787407 -29.2281496062992083 re
+f
+BT
+/F1 6.5 Tf
+7.4749999999999996 TL
+0.314 g
+252.8503937007874356 547.4931496062990846 Td
+(60) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+289.1338582677165618 556.4197244094486905 39.6850393700787407 -29.2281496062992083 re
+f
+BT
+/F1 6.5 Tf
+7.4749999999999996 TL
+0.314 g
+292.5354330708661905 547.4931496062990846 Td
+(50) Tj
+ET
+0.96 g
+0.78 G
+0. w
+0.96 g
+328.8188976377953168 556.4197244094486905 226.7760629921258726 -29.2281496062992083 re
+f
+BT
+/F1 6.5 Tf
+7.4749999999999996 TL
+0.314 g
+332.2204724409449454 547.4931496062990846 Td
+(Research note tied to retrieved source [src_b9e218c7f2b8eca5] for «What) Tj
+T* (are the main trade-offs between synchronized blocks vs explicit locks in) Tj
+T* (java?»: Even while t is in its synchronized block, another thread can dange) Tj
+ET
+0. G
+0.5670000000000001 w
+0.78 G
+0. w
+0. G
+0.5670000000000001 w
+0. G
+0.5670000000000001 w
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R ]
+/Count 10
+>>
+endobj
+23 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+24 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+25 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+26 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+27 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+28 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+29 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+30 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+31 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+32 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+33 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+34 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+35 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+36 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 23 0 R
+/F2 24 0 R
+/F3 25 0 R
+/F4 26 0 R
+/F5 27 0 R
+/F6 28 0 R
+/F7 29 0 R
+/F8 30 0 R
+/F9 31 0 R
+/F10 32 0 R
+/F11 33 0 R
+/F12 34 0 R
+/F13 35 0 R
+/F14 36 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+37 0 obj
+<<
+/Producer (jsPDF 4.2.1)
+/CreationDate (D:20260511114418+05'30')
+>>
+endobj
+38 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 39
+0000000000 65535 f 
+0000173607 00000 n 
+0000175490 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000004649 00000 n 
+0000004786 00000 n 
+0000018907 00000 n 
+0000019044 00000 n 
+0000029668 00000 n 
+0000029806 00000 n 
+0000040162 00000 n 
+0000040301 00000 n 
+0000065858 00000 n 
+0000065997 00000 n 
+0000089937 00000 n 
+0000090076 00000 n 
+0000114531 00000 n 
+0000114670 00000 n 
+0000139668 00000 n 
+0000139807 00000 n 
+0000165429 00000 n 
+0000165568 00000 n 
+0000173725 00000 n 
+0000173851 00000 n 
+0000173982 00000 n 
+0000174116 00000 n 
+0000174254 00000 n 
+0000174378 00000 n 
+0000174507 00000 n 
+0000174639 00000 n 
+0000174775 00000 n 
+0000174903 00000 n 
+0000175030 00000 n 
+0000175159 00000 n 
+0000175292 00000 n 
+0000175394 00000 n 
+0000175743 00000 n 
+0000175829 00000 n 
+trailer
+<<
+/Size 39
+/Root 38 0 R
+/Info 37 0 R
+/ID [ <E6708A59791047708935735B81C215C2> <E6708A59791047708935735B81C215C2> ]
+>>
+startxref
+175933
+%%EOF
