@@ -16,6 +16,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from app.config import get_settings
 from app.db.base import Base
 from app.db.pg_network import (
+    asyncpg_pooler_url_prefer_ipv4_literal,
     asyncpg_url_replace_host_with_ipv4,
     is_supabase_direct_hostname,
     rewrite_supabase_direct_to_session_pooler_any,
@@ -38,6 +39,9 @@ def _asyncpg_connect_args(
     ``statement_cache_size=0``. Session pooler on port ``5432`` should keep the default
     prepared-statement cache.
 
+    When connecting by IPv4 literal (hostname rewritten), ``*supabase*`` is no longer
+    in the host segment — ``ssl_relaxed_hostname`` forces TLS on.
+
     When connecting by IPv4 to a hostname-issued cert, TLS hostname check must be
     relaxed while still verifying the certificate chain (``CERT_REQUIRED``).
     """
@@ -47,7 +51,8 @@ def _asyncpg_connect_args(
     lower = canonical_database_url.lower()
 
     needs_ssl = (
-        "supabase.co" in host
+        ssl_relaxed_hostname
+        or "supabase.co" in host
         or "supabase.com" in host
         or "pooler.supabase.com" in host
         or "sslmode=require" in lower
@@ -72,18 +77,24 @@ def _asyncpg_connect_args(
     if transaction_pooler:
         args["statement_cache_size"] = 0
     if needs_ssl:
-        # Asyncpg connect timeout (cold pool / network blips; Render → Supabase).
         args["timeout"] = 60.0
     return args
 
 
 _effective_url = _settings.database_url
 _ssl_relaxed = False
+
+# Supabase session pooler: asyncpg may try IPv6 first; Render is IPv4-only — prefer literal IPv4.
+_lit, _rel = asyncpg_pooler_url_prefer_ipv4_literal(_effective_url)
+_effective_url, _ssl_relaxed = _lit, _rel
+
 if _settings.database_supabase_ipv4:
-    _effective_url, _ssl_relaxed = asyncpg_url_replace_host_with_ipv4(
-        _settings.database_url,
+    u2, r2 = asyncpg_url_replace_host_with_ipv4(
+        _effective_url,
         explicit_ipv4=_settings.database_hostaddr,
     )
+    _effective_url = u2
+    _ssl_relaxed = _ssl_relaxed or r2
     if _effective_url == _settings.database_url and is_supabase_direct_hostname(
         urlparse(_settings.database_url).hostname
     ):
@@ -92,8 +103,9 @@ if _settings.database_supabase_ipv4:
             region_hint=_settings.supabase_pooler_region,
         )
         if alt:
-            _effective_url = alt
-            _ssl_relaxed = False
+            lit_alt, rel_alt = asyncpg_pooler_url_prefer_ipv4_literal(alt)
+            _effective_url = lit_alt
+            _ssl_relaxed = _ssl_relaxed or rel_alt
 
 _p = urlparse(_effective_url)
 logger.info(

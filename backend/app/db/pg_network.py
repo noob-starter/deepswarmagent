@@ -230,6 +230,47 @@ def rewrite_supabase_direct_to_session_pooler_any(
     return out
 
 
+def is_supabase_pooler_hostname(hostname: str | None) -> bool:
+    if not hostname:
+        return False
+    return hostname.lower().endswith(".pooler.supabase.com")
+
+
+def asyncpg_pooler_url_prefer_ipv4_literal(url: str) -> tuple[str, bool]:
+    """
+    Replace *.pooler.supabase.com with its IPv4 in the URL netloc.
+
+    libpq (Alembic/psycopg2) and asyncpg sometimes differ in address family
+    ordering; on IPv4-only hosts asyncpg can pick an unreachable IPv6 first.
+    Connecting by IPv4 requires relaxing TLS hostname verification (cert is
+    for the pooler hostname).
+    """
+    p = urlparse(url)
+    host = p.hostname
+    if not is_supabase_pooler_hostname(host):
+        return url, False
+    ipv4 = first_ipv4_socket(host or "")
+    if not ipv4:
+        return url, False
+
+    user = quote(p.username or "", safe="")
+    password = p.password
+    if password is not None:
+        auth = f"{user}:{quote(password, safe='')}"
+    elif p.username:
+        auth = user
+    else:
+        auth = ""
+    port = f":{p.port}" if p.port else ""
+    netloc = f"{auth}@{ipv4}{port}" if auth else f"{ipv4}{port}"
+    new_url = urlunparse(p._replace(netloc=netloc))
+    logger.info(
+        "asyncpg: using IPv4 literal for pooler host %s (TLS SNI hostname check relaxed).",
+        host,
+    )
+    return new_url, True
+
+
 def asyncpg_url_replace_host_with_ipv4(
     url: str, *, explicit_ipv4: str | None = None
 ) -> tuple[str, bool]:
