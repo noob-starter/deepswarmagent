@@ -71,7 +71,12 @@ def create_app() -> FastAPI:
             async with AsyncSessionLocal() as session:
                 await session.execute(text("SELECT 1"))
         except Exception as exc:
-            logger.warning("Database health check failed: %s", exc)
+            logger.warning(
+                "Database health check failed (%s): %s",
+                type(exc).__name__,
+                exc,
+                exc_info=True,
+            )
             raise HTTPException(
                 status_code=503,
                 detail="database_unreachable",

@@ -197,6 +197,9 @@ class Settings(BaseSettings):
         if not isinstance(v, str):
             return v
         s = v.strip()
+        # Render / dashboard paste sometimes wraps the whole URI in quotes.
+        if (s.startswith('"') and s.endswith('"')) or (s.startswith("'") and s.endswith("'")):
+            s = s[1:-1].strip()
         if s.startswith("postgresql://") and not s.startswith("postgresql+asyncpg://"):
             s = f"postgresql+asyncpg://{s[len('postgresql://') :]}"
         return _strip_asyncpg_incompatible_query(s)
