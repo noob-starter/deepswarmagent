@@ -9,6 +9,7 @@ from decimal import Decimal
 from functools import lru_cache
 from pathlib import Path
 from typing import Literal, Self
+from urllib.parse import urlparse, urlunparse
 
 from pydantic import AliasChoices, Field, field_validator, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -48,6 +49,26 @@ def _discovered_env_files() -> tuple[str, ...]:
         Path(".env.local"),
     )
     return tuple(str(p.resolve()) for p in candidates if p.is_file())
+
+
+def _strip_asyncpg_incompatible_query(url: str) -> str:
+    """
+    Neon connection strings often include ``channel_binding=require``.
+    asyncpg does not implement SCRAM channel binding, so that parameter breaks connects.
+    """
+    parsed = urlparse(url)
+    if not parsed.query:
+        return url
+    kept: list[str] = []
+    for segment in parsed.query.split("&"):
+        if not segment:
+            continue
+        key = segment.split("=", 1)[0].lower()
+        if key == "channel_binding":
+            continue
+        kept.append(segment)
+    new_query = "&".join(kept)
+    return urlunparse(parsed._replace(query=new_query))
 
 
 class Settings(BaseSettings):
@@ -177,8 +198,8 @@ class Settings(BaseSettings):
             return v
         s = v.strip()
         if s.startswith("postgresql://") and not s.startswith("postgresql+asyncpg://"):
-            return f"postgresql+asyncpg://{s[len('postgresql://') :]}"
-        return s
+            s = f"postgresql+asyncpg://{s[len('postgresql://') :]}"
+        return _strip_asyncpg_incompatible_query(s)
 
     @model_validator(mode="after")
     def production_gemini_defaults(self) -> Self:

@@ -16,12 +16,20 @@ from app.db.base import Base
 
 _settings = get_settings()
 
-_NEON = "neon.tech" in _settings.database_url.lower()
-
 
 def _asyncpg_connect_args(database_url: str) -> dict[str, Any]:
-    """Neon requires TLS; asyncpg does not infer sslmode= from the URI alone."""
-    if _NEON:
+    """
+    Neon and many cloud Postgres providers require TLS; asyncpg does not infer
+    ``sslmode=require`` from the URI unless we pass ``ssl=`` explicitly.
+    """
+    lower = database_url.lower()
+    needs_ssl = (
+        "neon.tech" in lower
+        or "sslmode=require" in lower
+        or "sslmode%3drequire" in lower  # URL-encoded =
+        or "ssl=true" in lower
+    )
+    if needs_ssl:
         return {"ssl": ssl.create_default_context()}
     return {}
 
