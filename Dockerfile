@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:1
 # Build context must be the repository root (same as backend/Dockerfile).
 # Some hosts only look for ./Dockerfile; this file mirrors the API image.
 
