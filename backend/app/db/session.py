@@ -5,6 +5,7 @@ A single PostgreSQL instance backs sessions, audit snapshots, and any future
 tables—no Redis required for this backend slice.
 """
 
+import logging
 import ssl
 from collections.abc import AsyncGenerator
 from typing import Any
@@ -21,6 +22,7 @@ from app.db.pg_network import (
 )
 
 _settings = get_settings()
+logger = logging.getLogger(__name__)
 
 
 def _asyncpg_connect_args(
@@ -32,15 +34,16 @@ def _asyncpg_connect_args(
     Hosted Postgres (e.g. Supabase) expects TLS; asyncpg does not infer
     ``sslmode=require`` from the URI unless we pass ``ssl=`` explicitly.
 
-    PgBouncer transaction pool (Supabase port 6543) needs
-    ``statement_cache_size=0``.
+    Supabase **transaction** pool (port ``6543``, or ``pgbouncer=true``) needs
+    ``statement_cache_size=0``. Session pooler on port ``5432`` should keep the default
+    prepared-statement cache.
 
     When connecting by IPv4 to a hostname-issued cert, TLS hostname check must be
     relaxed while still verifying the certificate chain (``CERT_REQUIRED``).
     """
     parsed = urlparse(canonical_database_url)
     host = (parsed.hostname or "").lower()
-    port = parsed.port
+    port = parsed.port or 5432
     lower = canonical_database_url.lower()
 
     needs_ssl = (
@@ -51,10 +54,10 @@ def _asyncpg_connect_args(
         or "sslmode%3drequire" in lower  # URL-encoded =
         or "ssl=true" in lower
     )
-    pooler_like = (
-        "pooler.supabase.com" in host
-        or port == 6543
+    transaction_pooler = (
+        port == 6543
         or "pgbouncer=true" in lower
+        or "pool_mode=transaction" in lower
     )
 
     args: dict[str, Any] = {}
@@ -66,8 +69,11 @@ def _asyncpg_connect_args(
             args["ssl"] = ctx
         else:
             args["ssl"] = ssl.create_default_context()
-    if pooler_like:
+    if transaction_pooler:
         args["statement_cache_size"] = 0
+    if needs_ssl:
+        # Asyncpg connect timeout (cold pool / network blips; Render → Supabase).
+        args["timeout"] = 60.0
     return args
 
 
@@ -88,6 +94,14 @@ if _settings.database_supabase_ipv4:
         if alt:
             _effective_url = alt
             _ssl_relaxed = False
+
+_p = urlparse(_effective_url)
+logger.info(
+    "SQLAlchemy async engine using host=%s port=%s (ssl_relaxed_hostname=%s)",
+    _p.hostname,
+    _p.port or 5432,
+    _ssl_relaxed,
+)
 
 engine = create_async_engine(
     _effective_url,

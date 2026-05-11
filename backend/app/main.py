@@ -6,8 +6,10 @@ from __future__ import annotations
 
 import logging
 from contextlib import asynccontextmanager
+from urllib.parse import urlparse
 
 from fastapi import FastAPI, HTTPException, Request
+from fastapi.encoders import jsonable_encoder
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy import text
@@ -28,6 +30,21 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Wire LiteLLM retries + Langfuse once per worker process."""
+    settings = get_settings()
+    if settings.environment == "production":
+        origins = parse_cors_origins_list(settings.cors_origins)
+        if not any(o.startswith("https://") for o in origins):
+            logger.warning(
+                "Production CORS_ORIGINS has no https:// origin — browsers (e.g. Vercel) "
+                "will block API calls unless you add your site, e.g. "
+                "CORS_ORIGINS=https://deepswarmagent.vercel.app"
+            )
+    dbp = urlparse(settings.database_url)
+    logger.info(
+        "Startup: DATABASE_URL host=%s port=%s",
+        dbp.hostname,
+        dbp.port or 5432,
+    )
     configure_litellm_runtime()
     try:
         yield
@@ -46,10 +63,21 @@ def create_app() -> FastAPI:
     app.add_middleware(
         CORSMiddleware,
         allow_origins=origins,
-        allow_credentials=True,
+        allow_credentials=False,
         allow_methods=["*"],
         allow_headers=["*"],
     )
+
+    @app.exception_handler(HTTPException)
+    async def _http_exception_handler(
+        request: Request, exc: HTTPException
+    ) -> JSONResponse:
+        """JSONResponse so error bodies stay consistent; CORS middleware still applies."""
+        return JSONResponse(
+            status_code=exc.status_code,
+            content={"detail": jsonable_encoder(exc.detail)},
+            headers=exc.headers or {},
+        )
 
     @app.exception_handler(SQLAlchemyError)
     async def _sqlalchemy_exception_handler(

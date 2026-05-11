@@ -23,3 +23,4 @@ services:
         sync: false
       - key: CORS_ORIGINS
         sync: false
+        # Set in dashboard to your Vercel origin, e.g. https://deepswarmagent.vercel.app

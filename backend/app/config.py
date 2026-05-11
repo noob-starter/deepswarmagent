@@ -86,7 +86,10 @@ class Settings(BaseSettings):
     environment: Literal["local", "production"] = "local"
     cors_origins: str = Field(
         default="http://localhost:3000,http://127.0.0.1:3000,http://localhost:5173,http://127.0.0.1:5173",
-        description="Comma-separated origins for CORS (vite dev + docker web).",
+        description=(
+            "Comma-separated origins for CORS. Production: include your frontend, e.g. "
+            "https://your-app.vercel.app (Render env CORS_ORIGINS)."
+        ),
     )
 
     # --- Database (single DB: PostgreSQL only) ---
