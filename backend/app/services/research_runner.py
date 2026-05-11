@@ -31,7 +31,11 @@ logger = logging.getLogger(__name__)
 def _checkpoint_conn_string() -> str:
     """LangGraph's AsyncPostgresSaver expects a libpq URI without asyncpg driver."""
     s = get_settings()
-    return finalize_libpq_url(s.database_url, use_supabase_ipv4=s.database_supabase_ipv4)
+    return finalize_libpq_url(
+        s.database_url,
+        use_supabase_ipv4=s.database_supabase_ipv4,
+        explicit_hostaddr=s.database_hostaddr,
+    )
 
 
 def _initial_state(session_id: UUID, query: str) -> ResearchGraphState:

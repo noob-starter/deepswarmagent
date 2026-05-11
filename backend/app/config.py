@@ -104,6 +104,13 @@ class Settings(BaseSettings):
             "such as Render). Set DATABASE_SUPABASE_IPV4=false to disable."
         ),
     )
+    database_hostaddr: str | None = Field(
+        default=None,
+        description=(
+            "Optional IPv4 for libpq ``hostaddr`` when using db.*.supabase.co on IPv4-only "
+            "hosts. Set DATABASE_HOSTADDR if auto-resolution fails."
+        ),
+    )
     db_pool_size: int = Field(default=5, ge=1, le=50)
     db_max_overflow: int = Field(default=10, ge=0, le=100)
 

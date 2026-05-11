@@ -70,7 +70,10 @@ def _asyncpg_connect_args(
 _effective_url = _settings.database_url
 _ssl_relaxed = False
 if _settings.database_supabase_ipv4:
-    _effective_url, _ssl_relaxed = asyncpg_url_replace_host_with_ipv4(_settings.database_url)
+    _effective_url, _ssl_relaxed = asyncpg_url_replace_host_with_ipv4(
+        _settings.database_url,
+        explicit_ipv4=_settings.database_hostaddr,
+    )
 
 engine = create_async_engine(
     _effective_url,

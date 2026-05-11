@@ -18,7 +18,8 @@ Never commit real secrets; use `.env` locally (gitignored) and your host’s sec
 | `API_PORT` | `8000` | Port when not using platform `PORT` (e.g. local Docker). |
 | `ENVIRONMENT` | `local` | `local` or `production`. In `production`, if `MODEL_STRONG` / `MODEL_FAST` are still the default Ollama ids, they are replaced with `gemini/gemini-2.5-flash`. |
 | `CORS_ORIGINS` | Local Vite + Compose origins | Comma-separated allowed browser origins. Production: include your static frontend origin (e.g. `https://your-app.vercel.app`). |
-| `DATABASE_SUPABASE_IPV4` | `true` | For `db.*.supabase.co`, resolve an IPv4 address (fixes “Network is unreachable” when DNS returns IPv6 only). Set to `false` if you need to disable this. |
+| `DATABASE_SUPABASE_IPV4` | `true` | For `db.*.supabase.co`, resolve an IPv4 for libpq/asyncpg. Uses the container’s A record first, then public DNS-over-HTTPS (Cloudflare / Google) if only IPv6 is returned. Set `false` to disable. |
+| `DATABASE_HOSTADDR` | — | Optional IPv4 for libpq `hostaddr` when auto-resolution fails (e.g. DoH blocked). Example: `203.0.113.10`. |
 | `PORT` | — | Set by platforms such as Render; entrypoint listens on `PORT` when present. |
 
 ## Database pool
