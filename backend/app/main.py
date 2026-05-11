@@ -7,9 +7,11 @@ from __future__ import annotations
 import logging
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from sqlalchemy import text
+from sqlalchemy.exc import SQLAlchemyError
 
 from app.api.routes import router
 from app.config import get_settings, parse_cors_origins_list
@@ -48,6 +50,20 @@ def create_app() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+
+    @app.exception_handler(SQLAlchemyError)
+    async def _sqlalchemy_exception_handler(
+        request: Request, exc: SQLAlchemyError
+    ) -> JSONResponse:
+        """
+        Return a handled 503 so CORS headers are applied; unhandled DB errors
+        become generic 500s from Starlette and browsers report a CORS failure.
+        """
+        logger.warning("Database error on %s %s: %s", request.method, request.url.path, exc)
+        return JSONResponse(
+            status_code=503,
+            content={"detail": "database_error"},
+        )
 
     @app.get("/health")
     async def root_health() -> dict[str, str]:
