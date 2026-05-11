@@ -36,7 +36,12 @@ def _checkpoint_conn_string() -> str:
         sync = url
 
     low = sync.lower()
-    if "neon.tech" in low and "sslmode=" not in low and "ssl=" not in low:
+    needs_ssl_query = (
+        ("neon.tech" in low or "supabase.co" in low or "supabase.com" in low)
+        and "sslmode=" not in low
+        and "ssl=" not in low
+    )
+    if needs_ssl_query:
         sync = f"{sync}{'&' if '?' in sync else '?'}sslmode=require"
     return sync
 

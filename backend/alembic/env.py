@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import os
 import sys
 from logging.config import fileConfig
 from pathlib import Path
@@ -14,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from app.config import get_settings
 from app.db import models  # noqa: F401 — register ORM metadata
 from app.db.base import Base
 
@@ -25,13 +25,24 @@ target_metadata = Base.metadata
 
 
 def get_sync_url() -> str:
-    """Convert async SQLAlchemy URL used by the API into a sync driver for Alembic."""
-    raw = os.environ.get("DATABASE_URL")
-    if not raw:
-        raise RuntimeError("DATABASE_URL must be set when running migrations.")
-    if raw.startswith("postgresql+asyncpg://"):
-        return raw.replace("postgresql+asyncpg://", "postgresql://", 1)
-    return raw
+    """
+    Same normalized ``DATABASE_URL`` as the API (quote strip, channel_binding strip,
+    ``postgresql+asyncpg`` → ``postgresql`` for sync Alembic/psycopg2), plus
+    ``sslmode=require`` when missing for Neon/Supabase hosts.
+    """
+    url = get_settings().database_url
+    if url.startswith("postgresql+asyncpg://"):
+        sync = url.replace("postgresql+asyncpg://", "postgresql://", 1)
+    else:
+        sync = url
+    low = sync.lower()
+    if (
+        ("neon.tech" in low or "supabase.co" in low or "supabase.com" in low)
+        and "sslmode=" not in low
+        and "ssl=" not in low
+    ):
+        sync = f"{sync}{'&' if '?' in sync else '?'}sslmode=require"
+    return sync
 
 
 def run_migrations_offline() -> None:
