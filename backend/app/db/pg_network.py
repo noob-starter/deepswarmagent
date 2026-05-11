@@ -29,18 +29,20 @@ def is_supabase_direct_hostname(hostname: str | None) -> bool:
 
 
 def first_ipv4_socket(host: str) -> str | None:
-    try:
-        infos = socket.getaddrinfo(host, None, family=socket.AF_INET, type=socket.SOCK_STREAM)
-    except OSError:
-        return None
-    if not infos:
-        return None
-    return infos[0][4][0]
+    """Prefer IPv4; try with port hint (some resolvers behave better)."""
+    for port in ("5432", None):
+        try:
+            infos = socket.getaddrinfo(host, port, type=socket.SOCK_STREAM)
+        except OSError:
+            continue
+        for fam, _, _, _, sockaddr in infos:
+            if fam == socket.AF_INET:
+                return sockaddr[0]
+    return None
 
 
-def _ipv4_dns_json(hostname: str, endpoint: str) -> str | None:
-    """Resolve A record via DNS-over-HTTPS (no extra deps). Supabase direct is often IPv6-only in local DNS."""
-    q = quote(hostname, safe="")
+def _fetch_doh(hostname: str, endpoint: str) -> dict | None:
+    q = quote(hostname.rstrip("."), safe="")
     req = Request(
         f"{endpoint}?name={q}&type=A",
         headers={"Accept": "application/dns-json"},
@@ -49,12 +51,36 @@ def _ipv4_dns_json(hostname: str, endpoint: str) -> str | None:
     try:
         with urlopen(req, timeout=8) as resp:  # noqa: S310 — fixed DoH URLs only
             raw = resp.read().decode("utf-8")
-        payload = json.loads(raw)
+        return json.loads(raw)
     except (OSError, ValueError, json.JSONDecodeError):
         return None
-    for ans in payload.get("Answer", []):
+
+
+def _ipv4_from_doh(hostname: str, endpoint: str, *, depth: int = 5) -> str | None:
+    """
+    Resolve an A record via DNS-over-HTTPS; follow CNAME chains (Supabase often uses them).
+    """
+    if depth <= 0 or not hostname:
+        return None
+    payload = _fetch_doh(hostname, endpoint)
+    if not payload:
+        return None
+    try:
+        status = int(payload.get("Status", 0))
+    except (TypeError, ValueError):
+        status = 0
+    answers = payload.get("Answer") or []
+    if status != 0 and not answers:
+        return None
+    for ans in answers:
         if ans.get("type") == 1 and ans.get("data"):
             return str(ans["data"]).strip()
+    for ans in answers:
+        if ans.get("type") == 5 and ans.get("data"):
+            target = str(ans["data"]).rstrip(".")
+            nested = _ipv4_from_doh(target, endpoint, depth=depth - 1)
+            if nested:
+                return nested
     return None
 
 
@@ -69,10 +95,13 @@ def resolve_supabase_direct_ipv4(hostname: str, *, explicit: str | None = None) 
     ip = first_ipv4_socket(hostname)
     if ip:
         return ip
-    ip = _ipv4_dns_json(hostname, "https://1.1.1.1/dns-query")
+    ip = _ipv4_from_doh(hostname, "https://1.1.1.1/dns-query")
     if ip:
         return ip
-    return _ipv4_dns_json(hostname, "https://dns.google/resolve")
+    ip = _ipv4_from_doh(hostname, "https://dns.google/resolve")
+    if ip:
+        return ip
+    return _ipv4_from_doh(hostname, "https://dns9.quad9.net/dns-query")
 
 
 def libpq_append_ipv4_hostaddr(url: str, *, explicit_ipv4: str | None = None) -> str:
@@ -134,10 +163,15 @@ def finalize_libpq_url(
     *,
     use_supabase_ipv4: bool,
     explicit_hostaddr: str | None = None,
+    embed_hostaddr_in_query: bool = True,
 ) -> str:
     """
     Build ``postgresql://`` for psycopg2/psycopg3 (Alembic checkpointer, migrations):
-    strip asyncpg driver prefix, ensure ``sslmode`` for Supabase, optional ``hostaddr``.
+    strip asyncpg driver prefix, ensure ``sslmode`` for Supabase, optional ``hostaddr`` in URI.
+
+    For Alembic, pass ``embed_hostaddr_in_query=False`` and supply IPv4 via
+    ``create_engine(..., connect_args={"hostaddr": ...})`` — SQLAlchemy often drops
+    ``hostaddr`` when it is only present in the query string.
     """
     if canonical_database_url.startswith("postgresql+asyncpg://"):
         sync = canonical_database_url.replace("postgresql+asyncpg://", "postgresql://", 1)
@@ -150,6 +184,6 @@ def finalize_libpq_url(
         and "ssl=" not in low
     ):
         sync = f"{sync}{'&' if '?' in sync else '?'}sslmode=require"
-    if use_supabase_ipv4:
+    if use_supabase_ipv4 and embed_hostaddr_in_query:
         sync = libpq_append_ipv4_hostaddr(sync, explicit_ipv4=explicit_hostaddr)
     return sync
